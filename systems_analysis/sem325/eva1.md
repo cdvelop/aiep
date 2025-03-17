@@ -22,3 +22,11 @@
 - Catalina Toledo Mora
 - Diego González
 - Benjamin Uribe
+
+## SolvTech
+## integrantes:
+- Juan Beleño
+- Pedro Flores
+- Jose Aylwin
+- Luis Zeñartu
+
