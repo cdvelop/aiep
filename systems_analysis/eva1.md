@@ -1,13 +1,18 @@
 # pauta evaluación 1
 
-# descripcion:
-- se pretende que los alumnos puedan simular el proceso de análisis de sistemas de información, simulando la creación de una empresa el cual esta presentará la documentación para resolver la problemática a continuación.
+## creación del documento eva1.md donde se redactara lo siguiente:
 
-# problemática:
-- los profesores en general pierden demasiado tiempo en evaluar a los alumnos  preparar una clase ya de deben llevar a cabo la revisión de tareas, pruebas, etc. además de la preparación de la clase en si.
+### definición del cliente perfecto (target) de la empresa (5 pts)
+ - mínimo 5 lineas máximo 10
 
-- creación de repositorio con nombre de empresa (5 pts)
- cualquiera de los alumnos que pertenecen a la empresa pueden crear el repositorio, pero deben agregar a los demás miembros del equipo como colaboradores.
-- crear un documento llamado eva1.md donde se describa 5 requerimientos funcionales y 5 no funcionales (10 pts)
+### descripcion 5 requerimientos funcionales y no funcionales detectados en el cliente (10 pts) 
+
+### diseño proceso actual problemática presentada en diagrama bpmn (20 pts)
+ - para crear el diagrama puede usar el programa bizagi compartido por el profesor, a mano o usar https://app.diagrams.net/
+
+### diseño proceso con la posible solución a la problemática presentada en diagrama bpmn (20 pts)
+
+
+ 
 
 
