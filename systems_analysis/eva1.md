@@ -10,23 +10,4 @@
  cualquiera de los alumnos que pertenecen a la empresa pueden crear el repositorio, pero deben agregar a los demás miembros del equipo como colaboradores.
 - crear un documento llamado eva1.md donde se describa 5 requerimientos funcionales y 5 no funcionales (10 pts)
 
-# empresas creadas
-## SupportED
-## integrantes:
-- Daniel  Romero
-- Francisco  Villa
-- Jose Ignacio Chavez
-
-## Tech-eSolutions
-## integrantes:
-- Catalina Toledo Mora
-- Diego González
-- Benjamin Uribe
-
-## SolvTech
-## integrantes:
-- Juan Beleño
-- Pedro Flores
-- Jose Aylwin
-- Luis Zeñartu
 
