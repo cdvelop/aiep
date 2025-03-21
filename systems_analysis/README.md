@@ -1,13 +1,13 @@
-# Clase análisis de sistemas **3ro 2025**
+# Clase Análisis de Sistemas **3ro 25**
 
-# descripcion:
+# Descripcion:
 - se pretende que los alumnos puedan simular el proceso de análisis de sistemas de información, simulando la creación de una empresa el cual esta presentará la documentación para resolver la problemática a continuación.
 
-# problemática:
+# Problemática:
 - los profesores en general pierden demasiado tiempo en evaluar a los alumnos  preparar una clase ya de deben llevar a cabo la revisión de tareas, pruebas, etc. además de la preparación de la clase en si.
 
 
-## empresas creadas
+## - Empresas creadas que participaran en la evaluación:
 ### SupportED
 #### integrantes:
 - Daniel  Romero (REPO OWNER)
@@ -26,8 +26,6 @@
 - Pedro Flores (CEO)
 - Jose Aylwin (REPO OWNER)
 - Luis Zeñartu
-
-
 
 
 ## Links de interés 
