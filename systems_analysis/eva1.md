@@ -12,25 +12,16 @@
 
 ### diseño proceso con la posible solución a la problemática presentada en diagrama bpmn (20 pts)
 
-### el directorio de su trabajo debe tener la siguiente estructura (5 pts)
-  - mínimo 5 lineas máximo 10
- ```md
+### Estructura de directorios (5 pts)
+```md
 NombreMiEmpresa/
-├── env              # Variables de entorno
-├── .gitignore       # Archivos ignorados por git
-├── NombreApp/       # aplicación a presentar
-│   ├── modules.go   # Registro de módulos en main.server.go, main.wasm.go
-│   │
-│   ├── docs/
-│   │   ├── auth.go             # Estructuras y lógica compartida
-│   │   ├── b.back.api.go       # API endpoints (// go: build !wasm)
-│   │   ├── handlers.go         # Handlers compartidos
-│   │   └── img/
-│   │       └── diagrama    # modulo wasm (// go: build wasm)
-
- ```
-
-
- 
-
-
+├── eva1.md           # Documento de evaluación 1
+├── eva2.md           # Documento de evaluación 2  
+├── eva3.md           # Documento de evaluación 3
+├── eva4.md           # Documento de evaluación 4
+├── docs/             # Documentación
+│   ├── diagrams/     # Diagramas del sistema
+│   │   └── diagrama.bpmn   # Diagrama BPMN de procesos
+│   └── img/          # Imágenes y gráficos
+├── NombreApp/        # Aplicación principal
+```
