@@ -9,4 +9,4 @@
 
 - deben realizar push al repositorio del profesor para que el profesor pueda ver el avance de cada empresa
 
-- plazo proximo miércoles 26 de octubre 2025
+- plazo proximo miércoles 26 de marzo 2025
