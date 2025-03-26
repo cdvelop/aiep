@@ -19,13 +19,13 @@
 - Catalina Toledo Mora (CEO)
 - Diego González (REPO OWNER)
 - Benjamin Uribe
+- Luis Zeñartu
 
 ### SolvTech
 #### integrantes:
 - Juan Beleño
 - Pedro Flores (CEO)
 - Jose Aylwin (REPO OWNER)
-- Luis Zeñartu
 
 
 ## Links de interés 
