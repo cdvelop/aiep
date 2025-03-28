@@ -10,7 +10,6 @@
 | 🔴 Jose Ignacio Chavez Leiva |70 | | | | |
 | 🔵 Jose Manuel Aylwin Troncoso | | | | | |
 | 🔵 Juan Alirio Beleño | | | | | |
-| 🔵 Luis Gustavo Zañartu Otarola | | | | | |
 | 🔵 Pedro Jose Flores Medina | | | | | |
 
 **Leyenda:**
