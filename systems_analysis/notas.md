@@ -5,9 +5,9 @@
 | 🟢 Benjamin Arturo Uribe Sanhueza | | | | | |
 | 🟢 Catalina Constanza Toledo Mora | | | | | |
 | 🟢 Diego Nicolas Gonzalez Fuentes | | | | | |
-| 🔴 Daniel Esteban Romero Labra | | | | | |
-| 🔴 Francisco Javier Villa Faundez | | | | | |
-| 🔴 Jose Ignacio Chavez Leiva | | | | | |
+| 🔴 Daniel Esteban Romero Labra |70 | | | | |
+| 🔴 Francisco Javier Villa Faundez |70 | | | | |
+| 🔴 Jose Ignacio Chavez Leiva |70 | | | | |
 | 🔵 Jose Manuel Aylwin Troncoso | | | | | |
 | 🔵 Juan Alirio Beleño | | | | | |
 | 🔵 Luis Gustavo Zañartu Otarola | | | | | |
