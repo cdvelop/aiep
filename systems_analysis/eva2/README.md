@@ -1,6 +1,6 @@
 # Eva 2
 
-## diagrama pasos para agregar una variable de entorno usando git bash en windows
+## Pasos para guardar google token ai studio e instalar cline en vsc windows
 ![crear-env-vars-gitbash-windows drawio](crear-env-vars-gitbash-windows.drawio.svg)
 
 
