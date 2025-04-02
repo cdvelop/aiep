@@ -1,7 +1,7 @@
 # Eva 2
 
 ## diagrama pasos para agregar una variable de entorno usando git bash en windows
-![crear-env-vars-gitbash-windows drawio](https://github.com/user-attachments/assets/08a5100a-08b4-404f-8a6a-b0c342caf86d)
+![crear-env-vars-gitbash-windows drawio](crear-env-vars-gitbash-windows.drawio.svg)
 
 
 ## actividad: update bpmn diagrama (20 pts)
