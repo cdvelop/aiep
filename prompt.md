@@ -1,0 +1,3 @@
+En base al contenido del archivo @CUADERNO_APUNTES_PRO302.pdf, necesitamos crear una hoja de ruta para aprender la materia de ese archivo, somos 3 grupos de alumnos, que simulan ser 3 empresas de desarrollo de software, cada empresa pretende implementar una aplicación, para así, ir aplicando lo que esta en el archivo @CUADERNO_APUNTES_PRO302 en una aplicación real.
+
+- ¿Que aplicaciónes nos recomendarías para implementar y aprender?
