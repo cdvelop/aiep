@@ -1,5 +1,4 @@
-# aiep
+# AIEP
 
-Repositorio Clases Aiep Analisis de Sistemas
+Repositorio Clases Aiep
 
-# "Daniel_Romero_practicando_para_mejorar_en_esto_SALUDOS:)"
