@@ -1,4 +1,81 @@
 
+
+---
+
+## Actividad 3: Desarrollo de Casos de Uso
+
+### Objetivo
+
+El objetivo de esta actividad es que los alumnos transformen los requerimientos definidos en la primera actividad en un conjunto de **casos de uso** que describan, de manera clara y concisa, la interacción entre los usuarios (actores) y el sistema. Se busca que los estudiantes:
+- Identifiquen los escenarios de uso relevantes.
+- Representen gráficamente dichos casos de uso utilizando herramientas como **Mermaid** o **StarUML**.
+- Reflexionen sobre la relación entre requerimientos y casos de uso, entendiendo que no siempre existe una correspondencia directa uno a uno.
+
+### Instrucciones
+
+1. **Selección de Casos de Uso**  
+   A partir de los requerimientos funcionales definidos en la primera actividad, cada grupo deberá identificar al menos **tres** casos de uso principales que reflejen las funcionalidades esenciales de su sistema.  
+
+2. **Redacción y Descripción**  
+   Para cada caso de uso, se debe incluir:
+   - **Nombre del Caso de Uso:**  
+     Un título que resuma brevemente el objetivo del caso.
+   - **Actores Involucrados:**  
+     Los usuarios o sistemas que interactúan en el escenario.
+   - **Flujo Principal:**  
+     Descripción narrativa paso a paso de la secuencia de acciones desde la perspectiva del usuario.
+   - **Flujos Alternativos (Opcional):**  
+     Mención de posibles variaciones o excepciones relevantes.
+   
+3. **Representación Gráfica**  
+   Utilizando Mermaid o StarUML, cada grupo generará un diagrama de casos de uso que incluya:
+   - Los actores identificados.
+   - Los casos de uso correspondientes.
+   - Las relaciones de interacción (por ejemplo, asociaciones entre actores y casos de uso).
+
+4. **Entrega**  
+   - **Archivo:** El entregable será un archivo Markdown llamado `use_cases.md` que contenga:
+     - La descripción textual de cada caso de uso.
+     - El código correspondiente al diagrama de casos de uso (ya sea en Mermaid o una imagen exportada de StarUML).
+   - **Repositorio:** Deberán subir el archivo al siguiente repositorio:  
+     `github.com/cdvelop/aiep/systems_analysis/eva2/NOMBRE_EMPRESA`
+   - **Fecha de Entrega:** A coordinar según el calendario de clases (se recomienda entregarlo en la próxima sesión).
+
+---
+
+## Pauta de Calificación (20 puntos máximos)
+
+1. **Identificación y Selección de Casos de Uso (8 puntos)**
+   - **Pertinencia (4 puntos):** Se seleccionan los casos de uso que cubren adecuadamente los requerimientos críticos del sistema.
+   - **Claridad en la identificación (4 puntos):** Se describe de forma precisa el objetivo de cada caso de uso y se identifican correctamente los actores involucrados.
+
+2. **Redacción y Documentación (6 puntos)**
+   - **Flujo Principal y Flujos Alternativos (3 puntos):** Se detalla adecuadamente la secuencia de acciones y se señalan posibles variaciones.
+   - **Organización y claridad en la documentación (3 puntos):** El documento presenta una estructura lógica, es legible y está bien redactado, facilitando la comprensión de cada caso de uso.
+
+3. **Representación Gráfica (6 puntos)**
+   - **Diagramas precisos y completos (4 puntos):** El diagrama (en Mermaid o StarUML) refleja de manera correcta y visual la interacción entre actores y casos de uso.
+   - **Integración de la herramienta IA (Opcional / Complementario) (2 puntos):** Se valorará el uso de asistentes de IA para mejorar y validar el código o estructura del diagrama, si el grupo opta por esta modalidad.
+
+---
+
+## Sugerencias Adicionales
+
+- **Uso de Prompts con IA:**  
+  Se recomienda experimentar pidiendo a la IA ejemplos de casos de uso para contextos similares. Por ejemplo:  
+  > "Genera un diagrama de casos de uso en Mermaid para un sistema de registro de usuarios."
+  
+- **Retroalimentación entre Grupos:**  
+  Organiza una breve sesión de revisión donde los grupos comenten los diagramas y casos de uso de otros equipos. Esto puede ayudar a identificar mejoras y a clarificar conceptos.
+
+- **Enfoque en la Coherencia:**  
+  Asegúrate de que los casos de uso seleccionados sean coherentes con los requerimientos definidos inicialmente, evitando duplicaciones innecesarias o escenarios poco realistas.
+
+---
+
+Esta actividad permitirá reforzar la comprensión de los casos de uso como herramienta de análisis, facilitando la transición de los requerimientos a un diseño más estructurado y visual. Con estos elementos, los estudiantes estarán mejor preparados para avanzar en etapas posteriores del diseño y desarrollo del sistema.
+
+
 ## Actividad: Definición Inicial del Producto de Software
 
 ### Objetivo de la Actividad
