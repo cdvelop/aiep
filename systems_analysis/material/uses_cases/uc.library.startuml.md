@@ -1,0 +1,38 @@
+```plaintext
+@startuml BibliotecaUseCase
+
+' Actores
+actor "Usuario" as user
+actor "Bibliotecario" as librarian
+actor "Sistema" as system
+
+' Casos de uso
+rectangle "Sistema de Biblioteca" {
+  usecase "Buscar libro" as UC1
+  usecase "Prestar libro" as UC2
+  usecase "Devolver libro" as UC3
+  usecase "Registrar usuario" as UC4
+  usecase "Generar reportes" as UC5
+  usecase "Catalogar libro" as UC6
+  usecase "Enviar notificación" as UC7
+}
+
+' Relaciones
+user --> UC1
+user --> UC2
+user --> UC3
+librarian --> UC2
+librarian --> UC3
+librarian --> UC4
+librarian --> UC5
+librarian --> UC6
+system --> UC7
+
+' Inclusiones y extensiones
+UC2 ..> UC1 : <<include>>
+UC2 ..> UC7 : <<include>>
+UC3 ..> UC7 : <<include>>
+
+@enduml
+
+```

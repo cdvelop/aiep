@@ -1,0 +1,36 @@
+```plaintext
+@startuml BancaUseCase
+
+' Actores
+actor "Cliente" as client
+actor "Administrador" as admin
+actor "Sistema de Seguridad" as secSystem
+
+' Casos de uso
+rectangle "Sistema de Banca en Línea" {
+  usecase "Iniciar sesión" as UC1
+  usecase "Consultar saldo" as UC2
+  usecase "Transferir fondos" as UC3
+  usecase "Pagar servicios" as UC4
+  usecase "Gestionar usuarios" as UC5
+  usecase "Verificar identidad" as UC6
+  usecase "Registrar transacción" as UC7
+}
+
+' Relaciones
+client --> UC1
+client --> UC2
+client --> UC3
+client --> UC4
+admin --> UC1
+admin --> UC5
+secSystem --> UC6
+
+' Inclusiones y extensiones
+UC1 ..> UC6 : <<include>>
+UC3 ..> UC6 : <<include>>
+UC3 ..> UC7 : <<include>>
+UC4 ..> UC7 : <<include>>
+
+@enduml
+```

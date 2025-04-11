@@ -1,12 +1,5 @@
 # Clase Análisis de Sistemas **3ro 25**
 
-# Descripcion:
-- se pretende que los alumnos puedan simular el proceso de análisis de sistemas de información, simulando la creación de una empresa el cual esta presentará la documentación para resolver la problemática a continuación.
-
-# Problemática:
-- los profesores en general pierden demasiado tiempo en evaluar a los alumnos  preparar una clase ya de deben llevar a cabo la revisión de tareas, pruebas, etc. además de la preparación de la clase en si.
-
-
 ## - Empresas creadas que participaran en la evaluación:
 ### SupportED
 #### integrantes:
