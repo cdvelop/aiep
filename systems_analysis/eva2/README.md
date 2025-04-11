@@ -21,7 +21,7 @@ Cada grupo (compuesto por 3 a 4 personas) ha adoptado el nombre de una empresa s
    - "Nuestra empresa se enfoca en el sector salud, específicamente en el desarrollo de software para la gestión de clínicas dentales. Elegimos este sector debido al creciente número de clínicas dentales que necesitan digitalizar sus procesos y la falta de soluciones especializadas en el mercado local. Nos posicionaremos como la primera opción en software dental para clínicas pequeñas y medianas."
    
 2. **💻 Producto de Software:**  
-   - Definir el tipo de producto o servicio que ofrecerá la empresa.  
+   - Definir el tipo de producto de software que ofrecerá la empresa a la venta.  
    - Explicar brevemente la funcionalidad principal del producto.
 
    Ejemplo:
