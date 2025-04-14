@@ -38,6 +38,7 @@
 * 📱 **Plataforma adaptable a todos los dispositivos**  
 * 💾 **Base de datos para guardar progreso de usuarios**  
 * 🌐 **Soporte para múltiples lenguajes** (HTML, CSS, JavaScript)  
+* Nuestros usuarios son estudiantes y adultos sin experiencia previa en diseño web, que buscan una plataforma intuitiva para aprender creando proyectos reales. El 70% son personas de 16 a 40 años, con acceso a internet pero sin conocimientos técnicos avanzados. Quieren evitar cursos teóricos y prefieren herramientas que les permitan ver resultados inmediatos
 
 ---
 
@@ -70,3 +71,6 @@
 ## 👤 Historias de Usuario  
 1. *"Como estudiante de secundaria, quiero seguir un curso paso a paso para crear mi primera página web, sin tener que configurar programas complicados."*  
 2. *"Como profesional en reconversión laboral, necesito ver ejemplos reales de código y editarlo directamente en la plataforma, para entender cómo funciona."*  
+
+## Conclusion 
+* Supported nace como una respuesta a la creciente necesidad de formación práctica en diseño web para estudiantes y adultos sin experiencia previa. A través de su plataforma Learn Web Design, la empresa apuesta por un enfoque didáctico, accesible y 100% práctico, que permite a los usuarios aprender creando desde el primer día. Con funcionalidades clave como un editor integrado, un sistema de logros y un portafolio automático, se diferencia claramente de otras plataformas más teóricas. Su visión para 2026 es ambiciosa pero clara: democratizar el aprendizaje del diseño web y convertirlo en una experiencia accesible, motivadora y transformadora para quienes buscan adquirir habilidades digitales en un mundo cada vez más conectado.
