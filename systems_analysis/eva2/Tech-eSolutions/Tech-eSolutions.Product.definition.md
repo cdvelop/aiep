@@ -1,6 +1,5 @@
-# Tech-eSolutinons
-Nosotros nos enfocamos en soluciones de software abierto a desafios que compañias pueden enfrentar en su dia a dia, compuesta por 4 miembros, somos una empresa que se orgullese de tomar todo tipo de desafios y entregar soluciones de alta calidad para satisfacer tanto nuestros clientes como el publico general que utilizará estos.
-Nos enfocamos en el sector de ciberseguridad, aun así, tenemos experiencia en otros sectores.
+Nuestro Equipo de trabajo se enfocamos en soluciones de software abierto a desafios, que las compañias pueden enfrentar en su dia a dia, somos una empresa que esta al alcance de tomar todo tipo de desafios, entregar soluciones de alta calidad para satisfacer tanto a nuestros clientes como el publico general que utilizará eta aplicación.
+Nuestro enfoque principla es ciberseguridad,pero aun así, tenemos experiencia en otros sectores.
 
 ## Producto:
 RemindME es una aplicacion que no necesita internet, la cual te ayudará tanto con tu organización diaria como tus planes a largo plazo, en sí RemindME es la herramienta de toda persona que quiera, ya sea, bajar de peso, o comenzar a construir la disciplina necesaria para triunfar en el mundo de hoy en dia, cuenta con:
