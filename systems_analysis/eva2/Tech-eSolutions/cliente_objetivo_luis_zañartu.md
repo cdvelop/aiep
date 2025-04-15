@@ -1,2 +1,1 @@
-El cliente perfecto para nuestra empresa de hosting es aquel que valora las soluciones en línea seguras, confiables y eficientes. Buscan productos y servicios alineados con nuestras ofertas, y tienen un enfoque claro en la protección de sus datos y sistemas.
-Nuestra prioridad es ofrecer un entorno digital estable, seguro y con soporte inteligente para que nuestros clientes se enfoquen en crecer, mientras nosotros nos encargamos del resto.
+
