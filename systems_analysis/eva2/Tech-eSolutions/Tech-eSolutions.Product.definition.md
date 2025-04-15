@@ -29,6 +29,7 @@ RemindME es una aplicación que no necesita internet, la cual te ayudará con tu
         - Responsiva, y facil de usar el diseño tiene que ser claro y con sentido, para que el usuario no tenga problemas en buscar lo que necesite.
 
 👥 Cliente Objetivo
+
 🎯 Usuarios principales:
  La app esta diseñada para distitosd usuarios no hay una diferencia de edad de nuestro usuario cuando se requiere de un cambio fisico y un cambio psicologico dentro de nuestros usuarios que decidieron darle un giro a sus vidas.
 
