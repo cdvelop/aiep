@@ -3,12 +3,13 @@
 Nuestra Empresa esta enfocamos en soluciones de software abierto a desafios, que las compañias pueden enfrentar en su dia a dia, somos una empresa que esta al alcance de tomar todo tipo de desafios, entregar soluciones de alta calidad para satisfacer tanto a nuestros clientes como el publico general que utilizará eta aplicación.
 Nuestro enfoque principla es ciberseguridad,pero aun así, tenemos experiencia en otros sectores.
 
-🚀 Nombre: Tech-eSolutions
+🏙️ Nombre: Tech-eSolutions
+
 🔧 Funcionalidades principales:
 
-    👩‍💻 Ciberseguridad.
-   💾 Soluciones De Software.
-    💻 Creaciónes de Aplicaciones.
+ 👩‍💻 Ciberseguridad.
+ 💾 Soluciones De Software.
+ 💻 Creaciónes de Aplicaciones.
 
 
 📱 Producto:
