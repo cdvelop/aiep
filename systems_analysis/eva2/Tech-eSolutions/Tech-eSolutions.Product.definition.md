@@ -8,7 +8,9 @@ Nuestro enfoque principla es ciberseguridad,pero aun así, tenemos experiencia e
 🔧 Funcionalidades principales:
 
  👩‍💻 Ciberseguridad.
+ 
  💾 Soluciones De Software.
+ 
  💻 Creaciónes de Aplicaciones.
 
 
