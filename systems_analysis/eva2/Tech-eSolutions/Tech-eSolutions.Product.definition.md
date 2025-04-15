@@ -28,7 +28,8 @@ RemindME es una aplicación que no necesita internet, la cual te ayudará con tu
      - Esta App te ayudara físicamente teniendo los mejores resultados posibles.
   
 3. ❌ Requerimientos no funcionales:
-       - Diseño facil de leer, con colores ajustables a preferencia del usuario incluso contando con modo oscuro o modos de vision para gente con problemas de vista como por ejemplo el daltonismo o otros parecidos.
+
+      - Diseño facil de leer, con colores ajustables a preferencia del usuario incluso contando con modo oscuro o modos de vision para gente con problemas de vista como por ejemplo el daltonismo o otros parecidos.
    
      - Responsiva, y facil de usar el diseño tiene que ser claro y con sentido, para que el usuario no tenga problemas en buscar lo que necesite.
 
