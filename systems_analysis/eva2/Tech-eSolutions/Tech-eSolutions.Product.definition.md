@@ -20,11 +20,14 @@ RemindME es una aplicación que no necesita internet, la cual te ayudará con tu
 
 1. ✔️ Requerimientos funcionales:
         - Cuenta con 2 tipos de entrenamientos  el primero es liviano donde puede trabajar desde casa y el segundo es un poco más pesado donde puedes ir al gym.
-        - Cuenta con un sector que te está ayudando con tus comidas diarias.
-        - También cuenta con un sector que informa cuantas veces debes beber agua al día.
-        - Esta App te ayudara físicamente teniendo los mejores resultados posibles.
+   
+    - Cuenta con un sector que te está ayudando con tus comidas diarias.
+   
+     - También cuenta con un sector que informa cuantas veces debes beber agua al día.
+   
+     - Esta App te ayudara físicamente teniendo los mejores resultados posibles.
   
-2. ❌ Requerimientos no funcionales:   
+3. ❌ Requerimientos no funcionales:   
         - Diseño facil de leer, con colores ajustables a preferencia del usuario incluso contando con modo oscuro o modos de vision para gente con problemas de vista como por ejemplo el daltonismo o otros parecidos.
         - Responsiva, y facil de usar el diseño tiene que ser claro y con sentido, para que el usuario no tenga problemas en buscar lo que necesite.
 
