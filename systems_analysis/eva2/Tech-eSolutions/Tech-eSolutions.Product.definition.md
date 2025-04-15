@@ -32,7 +32,9 @@ RemindME es una aplicación que no necesita internet, la cual te ayudará con tu
 🔍 Perfil del usuario:
 
  🟣  Persona con cualquier rango de edad que quiera un cambio para su vida.
+ 
  🟣  Rango de edad o estatura fisica, cual quier edad edad y estatura fisica para otener el cambio que desee.
+ 
  🟣  Tener ese logro deseado para que se siente feliz fisicamente y psicologicamente.
 
     
