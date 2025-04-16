@@ -34,6 +34,7 @@ RemindME es una aplicación, la cual te ayudará con tu organización diaria com
      - Responsiva, y facil de usar el diseño tiene que ser claro y con sentido, para que el usuario no tenga problemas en buscar lo que necesite.
 
 👥 Cliente Objetivo
+
 El cliente objetivo seria cualquiera que desee continuar o comenzar sus entrenamientos de manera más concentrada, todo tipo de persona que desee alguna manera de documentar ya sea: porsiones diarias, ejercicios realizados, etc. La app solo le recuerda a el usuario a mantener su rutina y brindar apoyo para que este mismo complete sus rutinas y metas diarias.
 Es super customizable por lo tanto el uso que le dé el usuario será dependiente de este mismo.
 
@@ -50,7 +51,7 @@ Es super customizable por lo tanto el uso que le dé el usuario será dependient
  🟣  Tener ese logro deseado para que se siente feliz fisicamente y psicologicamente.
 
 
-## Visión del producto:
+👁️‍🗨️ Visión del producto:
 
 "RemindME es una app que ayuda a cumplir tus metas, ya sea bajar de peso o simplemente tomar la cantidad de agua necesaria al dia, RemindME es una app que es infaltable a la hora de cumplir objetivos de largo plazo."
 
