@@ -16,12 +16,12 @@ Nuestro enfoque principla es ciberseguridad,pero aun así, tenemos experiencia e
 
 📱 Producto:
 
-RemindME es una aplicación que no necesita internet, la cual te ayudará con tu organización diaria como tus planes a largo plazo, en sí RemindME es la herramienta de toda persona que quiera, bajar de peso, esta app te ayudara a tener tu control balanceado, donde dentro de la app no solo te dará un entrenamiento diario si no que también te ayudara con tus resultados a lo cual quieres llegar. RemindMe es una app que cuenta con varios funciones deportivas donde te puede ayudar a lograr tu peso ideal , tus comidas adecuadas y un sector donde te va marcando cuantos litros de agua puedes beber al día. Esta app cuenta con:
+RemindME es una aplicación, la cual te ayudará con tu organización diaria como tus planes a largo plazo, en sí RemindME es la herramienta de toda persona que quiera bajar de peso, esta app te ayudará a tener tu control balanceado, donde dentro de la app no solo te dará un entrenamiento diario si no que también te ayudará con tus resultados a lo cual quieres llegar. RemindME es una app que cuenta con varias funciones deportivas donde te puede ayudar a lograr tu peso ideal, tus comidas adecuadas y un sector donde te va marcando cuantos litros de agua puedes beber al día. Esta app cuenta con:
 
 1. ✔️ Requerimientos funcionales:
-        - Cuenta con 2 tipos de entrenamientos  el primero es liviano donde puede trabajar desde casa y el segundo es un poco más pesado donde puedes ir al gym.
+      - Cuenta con 2 tipos de entrenamientos  el primero es liviano donde puede trabajar desde casa y el segundo es un poco más pesado donde puedes ir al gym.
    
-    - Cuenta con un sector que te está ayudando con tus comidas diarias.
+     - Cuenta con un sector que te está ayudando con tus comidas diarias.
    
      - También cuenta con un sector que informa cuantas veces debes beber agua al día.
    
@@ -29,11 +29,13 @@ RemindME es una aplicación que no necesita internet, la cual te ayudará con tu
   
 3. ❌ Requerimientos no funcionales:
 
-      - Diseño facil de leer, con colores ajustables a preferencia del usuario incluso contando con modo oscuro o modos de vision para gente con problemas de vista como por ejemplo el daltonismo o otros parecidos.
+     - Diseño facil de leer, con colores ajustables a preferencia del usuario incluso contando con modo oscuro o modos de vision para gente con problemas de vista como por ejemplo el daltonismo o otros parecidos.
    
      - Responsiva, y facil de usar el diseño tiene que ser claro y con sentido, para que el usuario no tenga problemas en buscar lo que necesite.
 
 👥 Cliente Objetivo
+El cliente objetivo seria cualquiera que desee continuar o comenzar sus entrenamientos de manera más concentrada, todo tipo de persona que desee alguna manera de documentar ya sea: porsiones diarias, ejercicios realizados, etc. La app solo le recuerda a el usuario a mantener su rutina y brindar apoyo para que este mismo complete sus rutinas y metas diarias.
+Es super customizable por lo tanto el uso que le dé el usuario será dependiente de este mismo.
 
 🎯 Usuarios principales:
 
@@ -47,4 +49,15 @@ RemindME es una aplicación que no necesita internet, la cual te ayudará con tu
  
  🟣  Tener ese logro deseado para que se siente feliz fisicamente y psicologicamente.
 
-    
+
+## Visión del producto:
+
+"RemindME es una app que ayuda a cumplir tus metas, ya sea bajar de peso o simplemente tomar la cantidad de agua necesaria al dia, RemindME es una app que es infaltable a la hora de cumplir objetivos de largo plazo."
+
+Historias de usuarios:
+
+"RemindME me ayuda a recordarme a tomar agua todos los dias, soy bastante olvidadiza, asi que me sirve mucho jaja  5/5"
+-Javiera
+
+"Esta app me ayuda a mantenerme al dia con mi intake calorico, si nadie me recuerda que tengo que comer literalmente puedo pasar dias sin comer nada, asi que gracias a esta app puedo manterme saludable y cumplir mi meta de subir de peso"
+-Diego
