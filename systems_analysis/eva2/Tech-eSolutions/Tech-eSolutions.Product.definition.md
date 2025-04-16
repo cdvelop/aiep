@@ -19,13 +19,13 @@ Nuestro enfoque principla es ciberseguridad,pero aun así, tenemos experiencia e
 RemindME es una aplicación, la cual te ayudará con tu organización diaria como tus planes a largo plazo, en sí RemindME es la herramienta de toda persona que quiera bajar de peso, esta app te ayudará a tener tu control balanceado, donde dentro de la app no solo te dará un entrenamiento diario si no que también te ayudará con tus resultados a lo cual quieres llegar. RemindME es una app que cuenta con varias funciones deportivas donde te puede ayudar a lograr tu peso ideal, tus comidas adecuadas y un sector donde te va marcando cuantos litros de agua puedes beber al día. Esta app cuenta con:
 
 1. ✔️ Requerimientos funcionales:
-      - Cuenta con 2 tipos de entrenamientos  el primero es liviano donde puede trabajar desde casa y el segundo es un poco más pesado donde puedes ir al gym.
-   
-     - Cuenta con un sector que te está ayudando con tus comidas diarias.
-   
-     - También cuenta con un sector que informa cuantas veces debes beber agua al día.
-   
-     - Esta App te ayudara físicamente teniendo los mejores resultados posibles.
+   - Añadir, editar y eliminar tareas: el usuario debe ser capaz de crear, editar y eliminar estas tareas.
+
+   - Actividades asignables: las actividades o tareas deben de poder ser asignadas tanto imagenes, acciones u otras parametros para diseñar mejor la actividad
+
+   -Recordatorios: las tareas creadas se les puede asignar si quiere el usuario que les recuerde esta actividad, esto puede ser tanto cada siertas cantidad de horas, o dias exactos en la semana.
+
+   -Archivos de logeo de información: En estas el usuario debe de documentar su progreso del dia, este debe ser editable, compatible con imagenes y otras metricas.
   
 3. ❌ Requerimientos no funcionales:
 
@@ -54,7 +54,7 @@ Es super customizable por lo tanto el uso que le dé el usuario será dependient
 
 "RemindME es una app que ayuda a cumplir tus metas, ya sea bajar de peso o simplemente tomar la cantidad de agua necesaria al dia, RemindME es una app que es infaltable a la hora de cumplir objetivos de largo plazo."
 
-Historias de usuarios:
+### Historias de usuarios:
 
 "RemindME me ayuda a recordarme a tomar agua todos los dias, soy bastante olvidadiza, asi que me sirve mucho jaja  5/5"
 -Javiera
