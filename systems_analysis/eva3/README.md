@@ -7,6 +7,9 @@
 [![Casos de Uso](https://img.youtube.com/vi/fJa3cshrFWs/0.jpg)](https://www.youtube.com/watch?v=fJa3cshrFWs)
 ---
 
+- mas ejemplos de casos de uso en:
+https://github.com/cdvelop/aiep/systems_analysis/material/usescases
+
 ### 🎯 Objetivo de la Actividad
 
 El objetivo de esta actividad es que los alumnos creen diagramas de casos de uso basados en los requerimientos funcionales definidos en la actividad anterior, y que se familiaricen con el uso de diagramas en la documentación de proyectos de software.
@@ -53,9 +56,9 @@ El objetivo de esta actividad es que los alumnos creen diagramas de casos de uso
 La evaluación de esta actividad considerará los siguientes criterios principales:
 
 1. **Calidad de los Diagramas de Casos de Uso (20 puntos):**
-    *   **Correcta representación de los casos de uso** según los requerimientos funcionales definidos (10 puntos).
-    *   **Uso adecuado de relaciones** "extend" e "include" (5 puntos).
-    *   **Claridad y legibilidad** de los diagramas (5 puntos).
+    *   **Correcta representación de los casos de uso** según los requerimientos funcionales definidos (2 puntos por cada caso de uso, máximo 20 puntos).
+    *   **Uso adecuado de relaciones** "extend" e "include".
+    *   **Claridad y legibilidad** de los diagramas.
 
 2. **Uso de GitHub Issues (5 puntos):**
     *   Creación y uso de issues para la gestión de diagramas.
