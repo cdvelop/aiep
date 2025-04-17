@@ -7,8 +7,8 @@
 [![Casos de Uso](https://img.youtube.com/vi/fJa3cshrFWs/0.jpg)](https://www.youtube.com/watch?v=fJa3cshrFWs)
 ---
 
-- mas ejemplos de casos de uso en:
-https://github.com/cdvelop/aiep/systems_analysis/material/usescases
+- ### ejemplos de casos de uso:
+https://github.com/cdvelop/aiep/tree/main/systems_analysis/material/usescases
 
 ### 🎯 Objetivo de la Actividad
 
@@ -17,17 +17,20 @@ El objetivo de esta actividad es que los alumnos creen diagramas de casos de uso
 ### 📝 Instrucciones para los Grupos
 
 1.  **Diagramas de Casos de Uso:**
-    *   Creen **al menos dos diagramas de casos de uso** basados en los requerimientos funcionales que definieron en la **Eva 2 Actividad 2** (`systems_analysis/eva2/README.md`).
-    *   Utilicen la herramienta [diagrams.net](https://app.diagrams.net/) para crear los diagramas.
+    *   Creen **diagramas de casos de uso** basados en los requerimientos funcionales que definieron en la **Eva 2 Actividad 2** (`systems_analysis/eva2/README.md`).
+    *   Utilicen la herramienta [draw.io](https://app.diagrams.net/) para crear los diagramas.
     *   Exporten los diagramas en formato **SVG**.
-    *   Guarden los archivos SVG en la carpeta `docs/diagrams/usecases/` dentro de su repositorio.
+    *   Guarden los archivos SVG en la carpeta `docs/diagrams/usecases/` dentro de su repositorio de su aplicación.
     *   Nombren los archivos de diagramas secuencialmente como `UC-001.svg`, `UC-002.svg`, `UC-003.svg`, y así sucesivamente.
-    *   En el archivo `usecases.md` (dentro de la carpeta `docs`), inserten los diagramas como imágenes Markdown. Por ejemplo:
+    *   En el archivo `usecases.md` (dentro de la carpeta `docs`), inserten los diagramas con su respectivo titulo descriptivo y a que requerimiento funcional pertenece como imágenes Markdown. Por ejemplo:
 
-        ```markdown
-        ![Diagrama de Caso de Uso para [Nombre del Caso de Uso]](diagrams/usecases/UC-001.svg)
-        ```
-        Asegúrense de incluir un nombre descriptivo para cada diagrama en el texto alternativo de la imagen (`[Nombre del Caso de Uso]`).
+
+      ## Caso De Uso "Iniciar Sesión" (RF01)
+      ```markdown
+      ![Diagrama de Caso de Uso para Iniciar Sesión de Usuario](diagrams/usecases/UC-001.svg)
+      ```
+    Asegúrense de incluir un nombre descriptivo para cada diagrama en el texto alternativo de la imagen (ej: `Iniciar Sesión de Usuario`).
+
 
 2.  **Relaciones Extend e Include:**
     *   Donde sea apropiado, apliquen las relaciones "**extend**" e "**include**" en sus diagramas de casos de uso para demostrar una comprensión más profunda de estas relaciones.
