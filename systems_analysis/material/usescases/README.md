@@ -3,7 +3,7 @@
 La relación entre casos de uso y requerimientos es fundamental en la ingeniería de software. Los casos de uso representan las interacciones entre usuarios y el sistema para lograr objetivos específicos, mientras que los requerimientos definen las capacidades y restricciones que debe cumplir el sistema.
 
 
-### Ejemplo UC 1: Sistema de Biblioteca
+### Ejemplo UC: Sistema de Biblioteca
 
 ![biblioteca](uc.library.svg)
 
@@ -22,7 +22,13 @@ La relación entre casos de uso y requerimientos es fundamental en la ingenierí
    - **Requerimiento funcional**: El sistema debe notificar a los usuarios sobre préstamos, devoluciones y multas.
    - **Relación**: Es un caso de uso incluido por otros casos de uso para satisfacer el requerimiento de notificación.
 
-### Ejemplo UC 2: Sistema de Banca en Línea
+**Identificación de Módulos:**
+*   **Gestión de Usuarios:** UC4 (Registrar usuario)
+*   **Catálogo y Búsqueda:** UC1 (Buscar libro)
+*   **Gestión de Préstamos:** UC2 (Prestar libro), UC3 (Devolver libro), UC7 (Enviar notificación - *incluido*)
+*   **Administración de Biblioteca:** UC5 (Generar reportes), UC6 (Catalogar libro)
+
+### Ejemplo UC: Sistema de Banca en Línea
 
 ![online banking](uc.online.banking.svg)
 
@@ -43,7 +49,13 @@ La relación entre casos de uso y requerimientos es fundamental en la ingenierí
    - **Requerimiento funcional**: El sistema debe implementar autenticación de dos factores.
    - **Relación**: Es un caso de uso incluido por otros para satisfacer requerimientos de seguridad.
 
-### Ejemplo UC 3: Sistema de Comercio Electrónico
+**Identificación de Módulos:**
+*   **Autenticación y Seguridad:** UC1 (Iniciar sesión), UC6 (Verificar identidad - *incluido*)
+*   **Consultas:** UC2 (Consultar saldo)
+*   **Operaciones Monetarias:** UC3 (Transferir fondos), UC4 (Pagar servicios), UC7 (Registrar transacción - *incluido*)
+*   **Administración de Usuarios:** UC5 (Gestionar usuarios)
+
+### Ejemplo UC: Sistema de Comercio Electrónico
 
 ![ecommerce](uc.ecommerce.svg)
 
@@ -63,6 +75,12 @@ La relación entre casos de uso y requerimientos es fundamental en la ingenierí
    - **Requerimiento funcional**: El sistema debe integrarse con pasarelas de pago seguras.
    - **Requerimiento no funcional**: Las transacciones deben estar cifradas con SSL.
    - **Relación**: Es un caso de uso incluido que implementa requerimientos funcionales y no funcionales específicos de seguridad y procesamiento de pagos.
+
+**Identificación de Módulos:**
+*   **Gestión de Cuentas:** UC1 (Registrarse)
+*   **Catálogo y Navegación:** UC2 (Buscar productos), UC3 (Ver detalles del producto)
+*   **Carrito y Compra:** UC4 (Agregar al carrito), UC5 (Realizar checkout), UC6 (Procesar pago - *incluido*), UC8 (Generar factura - *incluido*)
+*   **Administración de Inventario:** UC7 (Gestionar inventario)
 
 ### Mejores prácticas para relacionar casos de uso y requerimientos:
 
