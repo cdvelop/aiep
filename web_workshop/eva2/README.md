@@ -2,9 +2,16 @@
 
 ## 🎯 EVALUACIÓN 2: Diseño Visual de la Aplicación
 
-## video para realización de mockups.
+## videos para realización de mockups.
 
+#### https://app.diagrams.net
 [![mockups](https://img.youtube.com/vi/b9alya99Z1o/0.jpg)](https://www.youtube.com/watch?v=b9alya99Z1o)
+---
+[![mockups](https://img.youtube.com/vi/_LJ3X2pC2WY/0.jpg)](https://www.youtube.com/watch?v=_LJ3X2pC2WY)
+---
+#### https://excalidraw.com/
+[![mockups](https://img.youtube.com/vi/Uc4zaQj75Iw/0.jpg)](https://www.youtube.com/watch?v=Uc4zaQj75Iw)
+
 ---
 
 ### 🎯 Objetivo de la Actividad
@@ -14,18 +21,19 @@ El objetivo de esta actividad es que los alumnos desarrollen el diseño visual d
 ### 📝 Instrucciones para los Grupos
 
 1. **Creación de Mockups por Módulo:**
-   * Basándose en los módulos y casos de uso definidos en la **Eva 3 de Análisis de Sistemas**, creen mockups de alta fidelidad para las pantallas principales de cada módulo.
+   * Basándose en los módulos y casos de uso definidos en la **Eva 3 de Análisis de Sistemas**, creen mockups para las pantallas principales de cada módulo.
   
-   * herramientas mas usadas para este propósito:
-    - [Figma](https://www.figma.com/), 
-    - [Adobe XD](https://www.adobe.com/products/xd.html)
-    - [Sketch](https://www.sketch.com/)
+   * herramientas usadas para este propósito:
     - [Draw.io](https://app.diagrams.net/)
+    - [ExcaliDraw](https://excalidraw.com)
+    - [Sketch](https://www.sketch.com/)
+    - [Adobe XD](https://www.adobe.com/products/xd.html)
+    - [Figma](https://www.figma.com/), 
    
     para crear los mockups.
    * Exporten los mockups en formato **PNG** o **SVG**.
-   * Guarden los archivos en la carpeta `docs/desing/mockups/` dentro del repositorio de su aplicación.
-   * Nombren los archivos usando el prefijo `MOCK-` seguido del nombre del módulo y la funcionalidad específica, por ejemplo: `MOCK-GestionUsuarios-Login.png`, `MOCK-GestionUsuarios-Registro.png`.
+   * Guarden los archivos en la carpeta `docs/desing/mockups/` **dentro del repositorio de su aplicación**.
+   * Nombren los archivos usando el prefijo `MOCK-` seguido del nombre del módulo y la funcionalidad específica, por ejemplo: `MOCK-GestionUsuarios-Login.png`, `MOCK-GestionUsuarios-Registro.svg`.
 
 2. **Definición de Paleta de Colores:**
    * Seleccionen una paleta de colores coherente para su aplicación, que incluya:
@@ -34,8 +42,7 @@ El objetivo de esta actividad es que los alumnos desarrollen el diseño visual d
      * Colores de acento
      * Colores neutros (para texto, fondos, etc.)
    * Justifiquen la elección de colores según la psicología del color y el público objetivo de la aplicación.
-   * Creen un archivo SVG o PNG con la paleta de colores y los códigos hexadecimales correspondientes.
-   * Guarden este archivo como `docs/style/color-palette.svg` (o .png).
+   * La paleta de colores se define en el archivo `docs/design/ui-design.md`.
 
 3. **Guía de Estilo:**
    * Definan una guía de estilo que incluya:
@@ -45,7 +52,7 @@ El objetivo de esta actividad es que los alumnos desarrollen el diseño visual d
      * Estilos de componentes comunes (botones, campos de formulario, tarjetas, etc.)
      * Iconografía
    * Creen un documento con ejemplos visuales de estos elementos.
-   * Guarden este documento como `docs/style/style-guide.md` con imágenes de apoyo en `docs/style/images/`.
+   * Guarden este documento como `docs/design/ui-design.md` con imágenes de apoyo en `docs/design/styles/images/`.
 
 4. **Flujos de Usuario:**
    * Por cada módulo principal, creen un diagrama de flujo de usuario que muestre la navegación entre pantallas.
@@ -53,14 +60,13 @@ El objetivo de esta actividad es que los alumnos desarrollen el diseño visual d
    * Guarden estos diagramas en `docs/mockups/flows/`.
 
 5. **Responsive Design:**
-   * Para al menos 2 pantallas principales, creen versiones del mockup para:
+   * Cree una version del mockup para al menos 1 pantalla que mas se adapte al publico de su aplicación:
      * Escritorio (1920x1080 o similar)
      * Tablet (768x1024 o similar)
      * Móvil (375x667 o similar)
-   * Expliquen las adaptaciones realizadas para cada dispositivo.
 
 6. **Documentación en el Repositorio:**
-   * Creen un archivo `ui-design.md` en la carpeta `docs` que contenga:
+   * Creen un archivo `ui-design.md` en la carpeta `docs/design` que contenga:
      * Enlaces a todos los mockups organizados por módulo
      * La paleta de colores con justificación
      * Un resumen de la guía de estilo
@@ -84,14 +90,13 @@ El objetivo de esta actividad es que los alumnos desarrollen el diseño visual d
 │   │   └── usecases.md            <-- Documentación de casos de uso
 │   │
 │   ├── design/                    <-- Todo lo relacionado con diseño de la aplicación
-│   │   ├── mockups/               <-- Mockups generales
-│   │   │   ├── desktop/           <-- Mockups versión escritorio
-│   │   │   ├── tablet/            <-- Mockups versión tablet
-│   │   │   └── mobile/            <-- Mockups versión móvil
-│   │   ├── styles/                <-- Guías de estilo y recursos visuales
-│   │   │   ├── images/            <-- Imágenes de apoyo para la guía de estilo
-│   │   │   └── color-palette.svg  <-- Paleta de colores
-│   │   └── ui-design.md           <-- Documento principal diseño
+│   │   ├── mockups/               <-- Mockups generales (organizados por módulo y responsive)
+│   │   │   ├── flows/             <-- Diagramas de flujo de usuario
+│   │   │   ├── MOCK-*.png         <-- Ejemplos de nombres de archivo
+│   │   │   └── ...
+│   │   ├── styles/                <-- Recursos visuales de apoyo para la guía
+│   │   │   └── images/            <-- Imágenes de componentes, iconos, etc.
+│   │   └── ui-design.md           <-- Documento principal: mockups, paleta, guía, flujos
 │   └── README.md                  <-- Índice general de la documentación
 └── README.md                      <-- README principal del proyecto
 ```
