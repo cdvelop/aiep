@@ -19,15 +19,14 @@ Nuestro enfoque principla es ciberseguridad,pero aun así, tenemos experiencia e
 RemindME es una aplicación, la cual te ayudará con tu organización diaria como tus planes a largo plazo, en sí RemindME es la herramienta de toda persona que quiera bajar de peso, esta app te ayudará a tener tu control balanceado, donde dentro de la app no solo te dará un entrenamiento diario si no que también te ayudará con tus resultados a lo cual quieres llegar. RemindME es una app que cuenta con varias funciones deportivas donde te puede ayudar a lograr tu peso ideal, tus comidas adecuadas y un sector donde te va marcando cuantos litros de agua puedes beber al día. Esta app cuenta con:
 
 1. ✔️ Requerimientos funcionales:
-   - CRUD: la app debe de tener la capacidad de hacer tareas basicas como Crear, Leer, Actualizar y Eliminar tareas que el usuario desee.
 
-   - Actividades asignables: las actividades o tareas deben de poder ser asignadas tanto imagenes, acciones u otras parametros para diseñar mejor la actividad
+   - Actividades asignables: las actividades o tareas tienen la opción de agregar imagenes.
 
    - Recordatorios: las tareas creadas se les puede asignar si quiere el usuario que les recuerde esta actividad, esto puede ser tanto cada siertas cantidad de horas, o dias exactos en la semana.
 
-   - Archivos de logeo de información: En estas el usuario debe de documentar su progreso del dia, este debe ser editable, compatible con imagenes y otras metricas.
-
-   - Seguimiento de calorias: La app debe de automaticamente sumar las calorias consumidas en el dia entregando un total al final del dia después de la ultima comida, la cual puede ser configurada en cualquier momento del dia.
+   - Reportar avances diarios: El usuario debe de documentar su progreso del dia.
+   
+   - Seguimiento de calorias: La app debe de automaticamente sumar las calorias consumidas en el dia entregando un total al final del dia. Este puede ser configurado para cualquier momento del dia.
   
 3. ❌ Requerimientos no funcionales:
 
