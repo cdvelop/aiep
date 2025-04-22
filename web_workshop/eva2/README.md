@@ -2,7 +2,7 @@
 
 ## 🎯 EVALUACIÓN 2: Diseño y Prototipado de Interfaces de Usuario
 
-*Nota: Este documento asume que los requisitos y casos de uso fueron definidos en la **Evaluación 3 de Análisis de Sistemas**. El archivo `docs/design/ui-design.md` en este mismo directorio sirve como **ejemplo de la estructura y calidad esperada** para la documentación de diseño.*
+*Nota: Este documento asume que los requisitos y casos de uso fueron definidos en la **Evaluación 3 de Análisis de Sistemas**. El archivo [ui-design.md](docs/design/ui-design.md) en este mismo directorio sirve como **ejemplo de la estructura y calidad esperada** para la documentación de diseño.*
 
 ## Recursos Útiles
 
@@ -33,7 +33,7 @@ El objetivo de esta actividad es que los alumnos diseñen la experiencia de usua
 
 Se recomienda seguir estos pasos de manera secuencial, utilizando **GitHub Issues** para planificar y dar seguimiento a cada tarea importante. Creen issues específicos para cada módulo o funcionalidad principal que vayan a diseñar.
 
-1.  **Revisión de Requisitos y Casos de Uso (Referencia Eva 3):**
+1.  **Revisión de Requisitos y Casos de Uso (Referencia Eva 3 Análisis de Sistemas):**
     *   Asegúrense de comprender bien los módulos, funcionalidades y usuarios definidos en la etapa de análisis.
     *   **Acción:** Revisar la documentación de análisis. No requiere un issue específico, pero es el punto de partida.
 
@@ -55,7 +55,7 @@ Se recomienda seguir estos pasos de manera secuencial, utilizando **GitHub Issue
 
 4.  **Creación de Mockups (Diseño Visual):**
     *   Basándose en los flujos definidos, creen mockups detallados para las pantallas principales de cada módulo/funcionalidad.
-    *   Utilicen herramientas como [Figma](https://www.figma.com/), [Sketch](https://www.sketch.com/), [Adobe XD](https://www.adobe.com/products/xd.html) o [ExcaliDraw](https://excalidraw.com/).
+    *   Utilicen herramientas como [Diagrams.net](https://app.diagrams.net/) o [ExcaliDraw](https://excalidraw.com/).
     *   Exporten los mockups en formato **PNG** o **SVG**.
     *   Guarden los archivos en `docs/design/mockups/`. Nombren los archivos usando el prefijo `MOCK-` seguido del nombre del módulo/funcionalidad (ej. `MOCK-GestionUsuarios-Login.png`).
     *   **Acción:** Crear mockups, guardarlos y **actualizar los issues correspondientes** en GitHub.
@@ -63,7 +63,7 @@ Se recomienda seguir estos pasos de manera secuencial, utilizando **GitHub Issue
 5.  **Definición de Paleta de Colores:**
     *   Seleccionen una paleta de colores coherente (primarios, secundarios, acentos, neutros).
     *   Justifiquen la elección (psicología del color, público objetivo, marca).
-    *   Documenten la paleta en `docs/design/ui-design.md` (ver archivo de ejemplo). Pueden incluir un archivo CSS o una imagen de la paleta.
+    *   Documenten la paleta en `docs/design/ui-design.md` [(ver archivo de ejemplo ui-design.md)](docs/design/ui-design.md). Pueden incluir un archivo CSS o una imagen de la paleta.
     *   **Acción:** Definir y documentar la paleta. **Actualizar/Cerrar un issue específico** para la identidad visual o mencionarlo en issues relevantes.
 
 6.  **Definición de Guía de Estilo (Style Guide):**
@@ -153,4 +153,4 @@ La evaluación considerará la calidad del proceso y los entregables, distribuid
 ---
 
 ### La evaluación se realizará el día:
-**[FECHA POR DEFINIR - EJ: 25-MAYO-2025] en clases**. *(Por favor, actualiza la fecha)*
+**LUNES 28-ABRIL-2025 en clases**

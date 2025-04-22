@@ -1,6 +1,6 @@
 # UI Design Documentation
 
-Este documento centraliza la información del diseño visual de la aplicación, incluyendo mockups, paleta de colores, guía de estilo y flujos de usuario.
+Este documento es un ejemplo de centralización de la información del diseño visual de la aplicación, incluyendo mockups, paleta de colores, guía de estilo y flujos de usuario.
 
 ## 1. Mockups
 
@@ -195,8 +195,6 @@ Ejemplos de estilos base para componentes.
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 ```
-
-*(Ver imágenes de apoyo en: `docs/design/styles/images/`)*
 
 ### Iconografía
 
