@@ -9,9 +9,9 @@
 | 🔴 Daniel Esteban Romero Labra    |70|58|64| | | |
 | 🔴 Francisco Javier Villa Faundez |70|58|64| | | |
 | 🔴 Jose Ignacio Chavez Leiva      |70|58|64| | | |
-| 🔵 Jose Manuel Aylwin Troncoso    |60|67|64| | | |
-| 🔵 Juan Alirio Beleño             |60|67|64| | | |
-| 🔵 Pedro Jose Flores Medina       |60|67|64| | | |
+| 🔵 Jose Manuel Aylwin Troncoso    |60|67|64|25| | |
+| 🔵 Juan Alirio Beleño             |60|67|64|25| | |
+| 🔵 Pedro Jose Flores Medina       |60|67|64|25| | |
 
 **Leyenda:**
 - 🔴 Supported
