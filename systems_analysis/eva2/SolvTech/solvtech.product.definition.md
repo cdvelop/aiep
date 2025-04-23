@@ -16,11 +16,11 @@ Su funcionalidad principal consiste en permitir a los profesores generar exámen
 
 ### Requerimientos Funcionales:
 
-1. **El sistema debe permitir generar y evaluar exámenes de manera automatizada**: Los profesores podrán crear exámenes personalizados seleccionando asignatura, nivel educativo, unidad temática y tipo de preguntas. El sistema utilizará IA para generar los exámenes acordes al currículo nacional y evaluar las respuestas de los estudiantes.
+1. **El sistema debe permitir generar y evaluar exámenes de manera automatizada**: Los profesores podrán crear exámenes personalizados seleccionando nivel educativo, unidad temática y tipo de preguntas. El sistema utilizará IA para generar los exámenes acordes a lo requerido por el profesor, permitiendo al profesor editar el exámen en base a la necesidad de este.
 
 2. **El sistema debe calcular, guardar y gestionar notas y promedios**: La plataforma calculará automáticamente las calificaciones por examen según los criterios establecidos por el profesor, guardará un historial de todas las evaluaciones y calculará promedios por estudiante, curso y asignatura.
 
-3. **El sistema debe guardar y permitir la visualización de las notas y promedios:** Después de cada evaluación, el sistema guardará las notas evaluadas, permitirá la visualización de estas y calculará los promedios. 
+3. **El sistema debe guardar y permitir la visualización de las notas y promedios:** Después de cada evaluación, el sistema guardará las notas evaluadas, permitirá la visualización de estas y calculará los promedios.
 
 ### Requerimientos No Funcionales:
 
