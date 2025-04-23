@@ -20,7 +20,7 @@ Su funcionalidad principal consiste en permitir a los profesores generar exámen
 
 2. **El sistema debe calcular, guardar y gestionar notas y promedios**: La plataforma calculará automáticamente las calificaciones por examen según los criterios establecidos por el profesor, guardará un historial de todas las evaluaciones y calculará promedios por estudiante, curso y asignatura.
 
-3. **El sistema debe entregar feedback detallado de los exámenes realizados**: Después de cada evaluación, el sistema generará reportes con análisis de resultados, identificando fortalezas y debilidades por estudiante y por curso, con recomendaciones específicas para mejorar el aprendizaje.
+3. **El sistema debe guardar y permitir la visualización de las notas y promedios:** Después de cada evaluación, el sistema guardará las notas evaluadas, permitirá la visualización de estas y calculará los promedios. 
 
 ### Requerimientos No Funcionales:
 
