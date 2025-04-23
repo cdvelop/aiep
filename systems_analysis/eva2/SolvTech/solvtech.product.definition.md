@@ -10,7 +10,7 @@ Nos posicionaremos en el mercado como una empresa pionera en la integración de 
 
 Nuestro producto principal es **CalificIA**, una plataforma integral para la generación automatizada de exámenes mediante inteligencia artificial y gestión de calificaciones. 
 
-Su funcionalidad principal consiste en permitir a los profesores generar exámenes personalizados según los contenidos curriculares, nivel educativo y objetivos de aprendizaje específicos. La plataforma también automatiza la evaluación de estos exámenes, calcula calificaciones, promedios y proporciona retroalimentación detallada tanto para los profesores como para los estudiantes.
+Su funcionalidad principal consiste en permitir a los profesores generar exámenes personalizados según los contenidos curriculares, nivel educativo y objetivos de aprendizaje específicos. La plataforma también automatiza la evaluación de estos exámenes, calcula calificaciones y muestra promedios.
 
 ## Requerimientos del Cliente
 
