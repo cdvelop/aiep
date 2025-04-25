@@ -6,9 +6,9 @@
 | 🟢 Catalina Constanza Toledo Mora |70|58|64|25| | |
 | 🟢 Diego Nicolas Gonzalez Fuentes |70|58|64|25| | |
 | 🟢 Luis Gustavo Zañartu Otarola   |60|33|47|25| | |
-| 🔴 Daniel Esteban Romero Labra    |70|58|64|0| | |
-| 🔴 Francisco Javier Villa Faundez |70|58|64|0| | |
-| 🔴 Jose Ignacio Chavez Leiva      |70|58|64|0| | |
+| 🔴 Daniel Esteban Romero Labra    |70|58|64|20| | |
+| 🔴 Francisco Javier Villa Faundez |70|58|64|20| | |
+| 🔴 Jose Ignacio Chavez Leiva      |70|58|64|15| | |
 | 🔵 Jose Manuel Aylwin Troncoso    |60|67|64|30| | |
 | 🔵 Juan Alirio Beleño             |60|67|64|30| | |
 | 🔵 Pedro Jose Flores Medina       |60|67|64|30| | |
