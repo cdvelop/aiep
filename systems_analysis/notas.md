@@ -2,10 +2,10 @@
 
 | NOMBRE | NOTA 1 | NOTA 2 | Promedio (nota 1-2) | NOTA 3 | NOTA 4 | Promedio (nota 3-4) | FINAL |
 |:-------|:------:|:------:|:------:|:------:|:------:|:------:|:-----:|
-| 🟢 Benjamin Arturo Uribe Sanhueza |60|33|47|25| | |
+| 🟡 Benjamin Arturo Uribe Sanhueza |60|33|47|25| | |
+| 🟡 Luis Gustavo Zañartu Otarola   |60|33|47|25| | |
 | 🟢 Catalina Constanza Toledo Mora |70|58|64|25| | |
 | 🟢 Diego Nicolas Gonzalez Fuentes |70|58|64|25| | |
-| 🟢 Luis Gustavo Zañartu Otarola   |60|33|47|25| | |
 | 🔴 Daniel Esteban Romero Labra    |70|58|64|20| | |
 | 🔴 Francisco Javier Villa Faundez |70|58|64|20| | |
 | 🔴 Jose Ignacio Chavez Leiva      |70|58|64|15| | |
@@ -17,6 +17,7 @@
 - 🔴 Supported
 - 🟢 Tech-eSolutions
 - 🔵 Solvtech
+- 🟡 BLRoyale
 
 
 ## PUNTOS ACUMULATIVOS INDIVIDUALES

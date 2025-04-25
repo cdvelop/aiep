@@ -2,10 +2,10 @@
 
 | NOMBRE | NOTA 1 | NOTA 2 | Promedio (nota 1-2) | NOTA 3 | NOTA 4 | Promedio (nota 3-4) | FINAL |
 |:-------|:------:|:------:|:------:|:------:|:------:|:------:|:-----:|
-| 🟢 Benjamin Arturo Uribe Sanhueza | | | | | | |
+| 🟡 Benjamin Arturo Uribe Sanhueza | | | | | | |
+| 🟡 Luis Gustavo Zañartu Otarola   | | | | | | |
 | 🟢 Catalina Constanza Toledo Mora | | | | | | |
 | 🟢 Diego Nicolas Gonzalez Fuentes | | | | | | |
-| 🟢 Luis Gustavo Zañartu Otarola   | | | | | | |
 | 🔴 Daniel Esteban Romero Labra    | | | | | | |
 | 🔴 Francisco Javier Villa Faundez | | | | | | |
 | 🔴 Jose Ignacio Chavez Leiva      | | | | | | |
@@ -17,6 +17,7 @@
 - 🔴 Supported
 - 🟢 Tech-eSolutions
 - 🔵 Solvtech
+- 🟡 BLRoyale
 
 
 ## PUNTOS ACUMULATIVOS INDIVIDUALES
