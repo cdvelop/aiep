@@ -11,8 +11,6 @@
 #### integrantes:
 - Catalina Toledo Mora (CEO)
 - Diego González (REPO OWNER)
-- Benjamin Uribe
-- Luis Zeñartu
 
 ### SolvTech
 #### integrantes:
@@ -20,4 +18,8 @@
 - Pedro Flores (CEO)
 - Jose Aylwin (REPO OWNER)
 
+### BLRoyale
+#### integrantes:
+- Benjamin Uribe
+- Luis Zeñartu
 

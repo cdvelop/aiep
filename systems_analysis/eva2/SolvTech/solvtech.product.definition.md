@@ -8,19 +8,19 @@ Nos posicionaremos en el mercado como una empresa pionera en la integración de 
 
 ## Producto de Software
 
-Nuestro producto principal es **CalificIA**, una plataforma integral para la generación y evaluación automatizada de exámenes mediante inteligencia artificial. 
+Nuestro producto principal es **CalificIA**, una plataforma integral para la generación automatizada de exámenes mediante inteligencia artificial y gestión de calificaciones. 
 
-Su funcionalidad principal consiste en permitir a los profesores generar exámenes personalizados según los contenidos curriculares, nivel educativo y objetivos de aprendizaje específicos. La plataforma también automatiza la evaluación de estos exámenes, calcula calificaciones, promedios y proporciona retroalimentación detallada tanto para los profesores como para los estudiantes.
+Su funcionalidad principal consiste en permitir a los profesores generar exámenes personalizados según los contenidos curriculares (mostrados en formatos PDF o .docx), nivel educativo y objetivos de aprendizaje específicos. La plataforma también automatiza la evaluación de estos exámenes, calcula calificaciones y muestra promedios.
 
 ## Requerimientos del Cliente
 
 ### Requerimientos Funcionales:
 
-1. **El sistema debe permitir generar y evaluar exámenes de manera automatizada**: Los profesores podrán crear exámenes personalizados seleccionando asignatura, nivel educativo, unidad temática y tipo de preguntas. El sistema utilizará IA para generar los exámenes acordes al currículo nacional y evaluar las respuestas de los estudiantes.
+1. **El sistema debe permitir generar y evaluar exámenes de manera automatizada**: Los profesores podrán crear exámenes personalizados seleccionando nivel educativo, unidad temática y tipo de preguntas. El sistema utilizará IA para generar los exámenes acordes a lo requerido por el profesor, permitiendo al profesor editar el exámen en base a la necesidad de este.
 
 2. **El sistema debe calcular, guardar y gestionar notas y promedios**: La plataforma calculará automáticamente las calificaciones por examen según los criterios establecidos por el profesor, guardará un historial de todas las evaluaciones y calculará promedios por estudiante, curso y asignatura.
 
-3. **El sistema debe entregar feedback detallado de los exámenes realizados**: Después de cada evaluación, el sistema generará reportes con análisis de resultados, identificando fortalezas y debilidades por estudiante y por curso, con recomendaciones específicas para mejorar el aprendizaje.
+3. **El sistema debe guardar y permitir la visualización de las notas y promedios:** Después de cada evaluación, el sistema guardará las notas evaluadas, permitirá la visualización de estas y calculará los promedios.
 
 ### Requerimientos No Funcionales:
 
