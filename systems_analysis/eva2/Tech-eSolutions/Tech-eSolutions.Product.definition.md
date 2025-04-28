@@ -20,11 +20,11 @@ RemindME es una aplicación, la cual te ayudará con tu organización diaria com
 
 1. ✔️ Requerimientos funcionales:
 
-   - Actividades asignables: las actividades o tareas tienen la opción de agregar imagenes.
+   Sistema de recordatorio: La app enviará notificaciones las cuales pueden ser configuradas en su frecuencia y fecha.
 
-   - Recordatorios: las tareas creadas se les puede asignar si quiere el usuario que les recuerde esta actividad, esto puede ser tanto cada siertas cantidad de horas, o dias exactos en la semana.
+   -Sincronización con herramientas fitness: la app ocupará datos de herramientas de salud como relojes inteligentes para ayudar en el monitoreo de la actividad y categorizar mejor el tipo de ejercicio o resultado que el usuario obtenga.
 
-   - Reportar avances diarios: El usuario debe de documentar su progreso del dia.
+   - Entrenamientos personalizables: la app le dará entrenamientos planeados dependiendo de lo que el usuario quiera conseguir, por ejemplo, estos pueden ser que se enfoquen en un tipo de zona muscular exacta o simplemente que sea de quemar grasa.
    
    - Seguimiento de calorias: La app debe de automaticamente sumar las calorias consumidas en el dia entregando un total al final del dia. Este puede ser configurado para cualquier momento del dia.
   
