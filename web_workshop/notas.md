@@ -1,6 +1,6 @@
 # EVALUACIONES WEB WORKSHOP:
 
-| NOMBRE | NOTA 1 | NOTA 2 | Promedio (nota 1-2) | NOTA 3 | NOTA 4 | Promedio (nota 3-4) | FINAL |
+| NOMBRE | EVA 1 | EVA 2 | Promedio (eva 1-2) | EVA 3 | EVA 4 | Promedio (eva 3-4) | FINAL |
 |:-------|:------:|:------:|:------:|:------:|:------:|:------:|:-----:|
 | 🟡 Benjamin Arturo Uribe Sanhueza | | | | | | |
 | 🟡 Luis Gustavo Zañartu Otarola   | | | | | | |
