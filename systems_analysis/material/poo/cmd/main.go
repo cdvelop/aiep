@@ -3,20 +3,22 @@ package main
 import "github.com/cdvelop/aiep/systems_analysis/material/poo/libro"
 
 func main() {
-	println("Hello, World!")
+
+	m := libro.ManejadorLibros{}
 
 	newLibro1 := libro.Libro{
 		Titulo: "El Quijote",
 		Genero: "Novela",
 	}
+	m.AgregarLibro(newLibro1)
 
-	// newLibro2 := libro.Libro{
-	// 	Titulo: "El Principito",
-	// 	Genero: "Cuento",
-	// }
+	newLibro2 := libro.Libro{
+		Titulo: "El Principito",
+		Genero: "Cuento",
+	}
 
-	newLibro1.EstadoLibro()
+	m.AgregarLibro(newLibro2)
 
-	newLibro1.Prestar()
+	m.MostrarLibros()
 
 }

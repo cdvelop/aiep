@@ -1,19 +1,11 @@
 package libro
 
-type ManejadorLibros struct {
-	libros []Libro
-}
-
-func (m ManejadorLibros) AgregarLibro(l Libro) {
-
-	m.libros = append(m.libros, l)
-}
-
 type Libro struct {
 	Titulo      string
 	Genero      string
 	valor       int
 	estaElLibro bool
+	stock       int
 }
 
 func (l Libro) Prestar() {
