@@ -6,9 +6,9 @@
 | 🟡 Luis Gustavo Zañartu Otarola   | | | | | | |
 | 🟢 Catalina Constanza Toledo Mora | | | | | | |
 | 🟢 Diego Nicolas Gonzalez Fuentes | | | | | | |
-| 🔴 Daniel Esteban Romero Labra    | | | | | | |
-| 🔴 Francisco Javier Villa Faundez | | | | | | |
-| 🔴 Jose Ignacio Chavez Leiva      | | | | | | |
+| 🔴 Daniel Esteban Romero Labra    | |31| | | | |
+| 🔴 Francisco Javier Villa Faundez | |31 | | | | |
+| 🔴 Jose Ignacio Chavez Leiva      | |41| | | | |
 | 🔵 Jose Manuel Aylwin Troncoso    | | | | | | |
 | 🔵 Juan Alirio Beleño             | | | | | | |
 | 🔵 Pedro Jose Flores Medina       | | | | | | |
@@ -25,5 +25,5 @@
 | ACTIVIDAD               | PUNTOS | B. Uribe | C. Toledo | D. Gonzalez | L. Zañartu | D. Romero | F. Villa | J. Chavez | J. Aylwin | J. Beleño | P. Flores |
 | :---------------------- | :----- | :------- | :-------- | :---------- | :--------- | :-------- | :------- | :-------- | :-------- | :-------- | :-------- |
 | Participacion en clases | 5      |          |           |             |            |           |          |           |           |           |           |
-| web test                | 10     |          | 10        | 10          |            |           |          | 10        | 10        | 10        | 10        |
+| web test                | 10     |          | 10        | 10          |            |           |          |         | 10        | 10        | 10        |
 | ayudantia               | 15     |          |           |             |            |           |          |           |           |           |           |
