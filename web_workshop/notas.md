@@ -9,9 +9,9 @@
 | 🔴 Daniel Esteban Romero Labra    | |31| | | | |
 | 🔴 Francisco Javier Villa Faundez | |31 | | | | |
 | 🔴 Jose Ignacio Chavez Leiva      | |41| | | | |
-| 🔵 Jose Manuel Aylwin Troncoso    | | | | | | |
-| 🔵 Juan Alirio Beleño             | | | | | | |
-| 🔵 Pedro Jose Flores Medina       | | | | | | |
+| 🔵 Jose Manuel Aylwin Troncoso    | |38| | | | |
+| 🔵 Juan Alirio Beleño             | |38| | | | |
+| 🔵 Pedro Jose Flores Medina       | |38| | | | |
 
 **Leyenda:**
 - 🔴 Supported
@@ -25,5 +25,5 @@
 | ACTIVIDAD               | PUNTOS | B. Uribe | C. Toledo | D. Gonzalez | L. Zañartu | D. Romero | F. Villa | J. Chavez | J. Aylwin | J. Beleño | P. Flores |
 | :---------------------- | :----- | :------- | :-------- | :---------- | :--------- | :-------- | :------- | :-------- | :-------- | :-------- | :-------- |
 | Participacion en clases | 5      |          |           |             |            |           |          |           |           |           |           |
-| web test                | 10     |          | 10        | 10          |            |           |          |         | 10        | 10        | 10        |
+| web test                | 10     |          | 10        | 10          |            |           |          |         |        |        |        |
 | ayudantia               | 15     |          |           |             |            |           |          |           |           |           |           |
