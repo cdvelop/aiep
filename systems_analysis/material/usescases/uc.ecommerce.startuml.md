@@ -1,4 +1,4 @@
-```plaintext
+```planumlcode
 @startuml EcommerceUseCase
 
 ' Actores

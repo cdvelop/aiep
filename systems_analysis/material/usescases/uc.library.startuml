@@ -1,4 +1,3 @@
-```plaintext
 @startuml BibliotecaUseCase
 
 ' Actores
@@ -8,7 +7,7 @@ actor "Sistema" as system
 
 ' Casos de uso
 rectangle "Sistema de Biblioteca" {
-  usecase "Buscar libro" as UC1
+  usecase "UC01 Buscar libro" as UC1
   usecase "Prestar libro" as UC2
   usecase "Devolver libro" as UC3
   usecase "Registrar usuario" as UC4
@@ -34,5 +33,3 @@ UC2 ..> UC7 : <<include>>
 UC3 ..> UC7 : <<include>>
 
 @enduml
-
-```

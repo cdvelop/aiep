@@ -1,0 +1,93 @@
+@startuml BibliotecaClassDiagram
+
+' Clases
+class Usuario {
+  - idUsuario: String
+  - nombre: String
+  + buscarLibro(criterio: String): List<Libro>
+  + solicitarPrestamo(libro: Libro): Prestamo
+  + devolverLibro(prestamo: Prestamo): void
+}
+
+class Bibliotecario {
+  - idBibliotecario: String
+  - nombre: String
+  + registrarUsuario(datos: Map): Usuario
+  + prestarLibro(usuario: Usuario, libro: Libro): Prestamo
+  + recibirDevolucion(prestamo: Prestamo): void
+  + catalogarLibro(datos: Map): Libro
+  + generarReporte(tipo: String): Reporte
+}
+
+class Libro {
+  - isbn: String
+  - titulo: String
+  - autor: String
+  - estado: EstadoLibro
+}
+
+enum EstadoLibro {
+  DISPONIBLE
+  PRESTADO
+  RESERVADO
+}
+
+class Prestamo {
+  - idPrestamo: String
+  - fechaPrestamo: Date
+  - fechaDevolucionPrevista: Date
+  - fechaDevolucionReal: Date
+  - estado: EstadoPrestamo
+}
+
+enum EstadoPrestamo {
+  ACTIVO
+  DEVUELTO
+  VENCIDO
+}
+
+class SistemaBiblioteca {
+  + buscarLibro(criterio: String): List<Libro>
+  + realizarPrestamo(usuario: Usuario, libro: Libro): Prestamo
+  + registrarDevolucion(prestamo: Prestamo): void
+  + agregarUsuario(datos: Map): Usuario
+  + agregarLibro(datos: Map): Libro
+  + generarReporte(tipo: String): Reporte
+  + enviarNotificacion(mensaje: String, destinatario: Usuario): void
+}
+
+class Notificacion {
+    - idNotificacion: String
+    - mensaje: String
+    - fechaEnvio: Date
+}
+
+class Reporte {
+    - idReporte: String
+    - tipo: String
+    - datos: Object
+    - fechaGeneracion: Date
+}
+
+' Relaciones
+Usuario "1" -- "*" Prestamo : tiene
+Libro "1" -- "*" Prestamo : asociado_a
+Bibliotecario "1" -- "*" Usuario : gestiona >
+Bibliotecario "1" -- "*" Libro : gestiona >
+Bibliotecario "1" -- "*" Prestamo : gestiona >
+Bibliotecario "1" -- "*" Reporte : genera >
+
+SistemaBiblioteca "1" -- "*" Libro : contiene >
+SistemaBiblioteca "1" -- "*" Usuario : registra >
+SistemaBiblioteca "1" -- "*" Prestamo : administra >
+SistemaBiblioteca "1" -- "*" Notificacion : envia >
+SistemaBiblioteca "1" -- "*" Reporte : produce >
+
+Prestamo ..> Notificacion : genera
+Prestamo ..> Libro : actualiza estado >
+Prestamo ..> Usuario : actualiza estado >
+
+Libro +-- EstadoLibro
+Prestamo +-- EstadoPrestamo
+
+@enduml
