@@ -1,5 +1,4 @@
-```plaintext
-@startuml BancaUseCase
+@startuml uc.online.banking
 
 ' Actores
 actor "Cliente" as client
@@ -33,4 +32,3 @@ UC3 ..> UC7 : <<include>>
 UC4 ..> UC7 : <<include>>
 
 @enduml
-```

@@ -21,9 +21,11 @@ En la clase anterior, exploramos la POO y su implementación en Go (`systems_ana
 * 📝 **Prompt Sugerido (adapte):** "Basado en los siguientes casos de uso del sistema [Nombre de su sistema] descritos en [referencia a sus documentos de casos de uso], genera un diagrama de clases en formato PlantUML. Identifica las clases principales, sus atributos (usando tipos `int`, `string`, `bool` donde sea apropiado) y métodos básicos relacionados con los casos de uso. Considera las relaciones entre clases (asociación, composición, etc.)."
 * 🔄 **Iteración:** Analice la respuesta de la IA. Refine el prompt o interactúe varias veces. La IA es un *apoyo*, usted es responsable del diseño final.
 
+* utilice la extension de visual studio code PlanUml vista en clases para crear sus diagramas de forma mas eficiente. 
+
 ### 3️⃣ **✏️ Refinamiento y Visualización del Diagrama**
 * 📄 Cree un archivo de texto con extensión `.plantuml` dentro de la carpeta `docs/analysis/diagrams/class/` de su repositorio de proyecto. Nombre el archivo de forma descriptiva, ej: `ClassDiagram-SistemaX.plantuml`.
-* 📋 Pegue el código PlantUML generado por la IA en este archivo.
+* 📋 Pegue el código PlantUML generado por la IA en este archivo. o pida que lo realice por ud (sea especifico en el directorio)
 * 🖼️ Utilice la extensión **PlantUML** en VS Code (o una herramienta online) para visualizar el diagrama generado a partir de su archivo `.plantuml`.
 * 🛠️ **Refine el diagrama:** Modifique el código PlantUML directamente en el archivo `.plantuml` para corregir, añadir o eliminar clases, atributos, métodos o relaciones según su análisis y los principios de diseño discutidos. Asegúrese de que los atributos utilicen al menos los tipos `int`, `string`, `bool`.
 * 💾 Una vez satisfecho con el diagrama, expórtelo o guárdelo como un archivo **SVG** en la misma carpeta (`docs/analysis/diagrams/class/`). Nombre el archivo SVG igual que el `.startuml` pero con extensión `.svg` (ej: `ClassDiagram-SistemaX.svg`).
@@ -102,7 +104,7 @@ En la clase anterior, exploramos la POO y su implementación en Go (`systems_ana
 
 ### 7️⃣ **📤 Entrega y Presentación**
 * 📦 Asegúrese de que todos los archivos (`.plantuml`, `.svg`, archivos `.go`, `class.md`) estén commiteados y pusheados a su repositorio de GitHub.
-* 📅 La entrega será el próximo miércoles a primera hora.
+* 📅 La entrega será el próximo miércoles 07 mayo a primera hora.
 * 👨‍🏫 Se espera que el trabajo se desarrolle principalmente durante las horas de clase.
 * 🎤 Esté preparado para presentar brevemente su diagrama de clases, la implementación de structs y discutir las decisiones de diseño durante la clase de entrega.
 
@@ -174,6 +176,11 @@ En la clase anterior, exploramos la POO y su implementación en Go (`systems_ana
 
 ### 🛠️ **Extensión PlantUML para VS Code**
 [![🎬 PlantUML en VS Code](https://img.youtube.com/vi/xhgDF5Gewi0/0.jpg)](https://www.youtube.com/watch?v=xhgDF5Gewi0)
+
+### 🛠️ **Configuración PlantUML para VS Code**
+![config uml vsc](../material/plantuml/config-plantuml-01.JPG) 
+![config uml vsc](../material/plantuml/config-plantuml-02.JPG) 
+
 
 ### 🤖 **PlantUML con ChatGPT**
 [![🎬 PlantUML con ChatGPT](https://img.youtube.com/vi/OFNk0VDzQ1k/0.jpg)](https://www.youtube.com/watch?v=OFNk0VDzQ1k)
