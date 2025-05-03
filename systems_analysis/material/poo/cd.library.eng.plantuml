@@ -1,0 +1,93 @@
+@startuml LibraryClassDiagramEng
+
+' Classes
+class User {
+  - userId: String
+  - name: String
+  + searchBook(criteria: String): List<Book>
+  + requestLoan(book: Book): Loan
+  + returnBook(loan: Loan): void
+}
+
+class Librarian {
+  - librarianId: String
+  - name: String
+  + registerUser(data: Map): User
+  + lendBook(user: User, book: Book): Loan
+  + receiveReturn(loan: Loan): void
+  + catalogBook(data: Map): Book
+  + generateReport(type: String): Report
+}
+
+class Book {
+  - isbn: String
+  - title: String
+  - author: String
+  - status: BookStatus
+}
+
+enum BookStatus {
+  AVAILABLE
+  BORROWED
+  RESERVED
+}
+
+class Loan {
+  - loanId: String
+  - loanDate: Date
+  - dueDate: Date
+  - returnDate: Date
+  - status: LoanStatus
+}
+
+enum LoanStatus {
+  ACTIVE
+  RETURNED
+  OVERDUE
+}
+
+class LibrarySystem {
+  + searchBook(criteria: String): List<Book>
+  + makeLoan(user: User, book: Book): Loan
+  + registerReturn(loan: Loan): void
+  + addUser(data: Map): User
+  + addBook(data: Map): Book
+  + generateReport(type: String): Report
+  + sendNotification(message: String, recipient: User): void
+}
+
+class Notification {
+    - notificationId: String
+    - message: String
+    - sentDate: Date
+}
+
+class Report {
+    - reportId: String
+    - type: String
+    - data: Object
+    - generationDate: Date
+}
+
+' Relationships
+User "1" -- "*" Loan : has
+Book "1" -- "*" Loan : associated_with
+Librarian "1" -- "*" User : manages >
+Librarian "1" -- "*" Book : manages >
+Librarian "1" -- "*" Loan : manages >
+Librarian "1" -- "*" Report : generates >
+
+LibrarySystem "1" -- "*" Book : contains >
+LibrarySystem "1" -- "*" User : registers >
+LibrarySystem "1" -- "*" Loan : administers >
+LibrarySystem "1" -- "*" Notification : sends >
+LibrarySystem "1" -- "*" Report : produces >
+
+Loan ..> Notification : generates
+Loan ..> Book : updates status >
+Loan ..> User : updates status >
+
+Book +-- BookStatus
+Loan +-- LoanStatus
+
+@enduml

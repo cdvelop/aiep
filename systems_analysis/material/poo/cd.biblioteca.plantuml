@@ -1,0 +1,110 @@
+@startuml cd.library
+' Titulo del Diagrama
+title Diagrama de Clases - Sistema de Biblioteca
+
+' Clases Base y Actores
+abstract class Persona {
+  - id: String
+  - nombre: String
+  - contacto: String
+  + getId(): String
+  + getNombre(): String
+}
+
+class Usuario extends Persona {
+  + solicitarPrestamo(libro: Libro): Prestamo
+  + devolverLibro(prestamo: Prestamo): void
+  + buscarLibro(criterio: String): List<Libro>
+}
+
+class Bibliotecario extends Persona {
+  + registrarUsuario(datos: Map): Usuario
+  + catalogarLibro(datos: Map): Libro
+  + generarReporte(tipo: String): Reporte
+  + gestionarPrestamo(usuario: Usuario, libro: Libro): Prestamo
+  + recibirDevolucion(prestamo: Prestamo): void
+}
+
+' Clases del Dominio
+class Libro {
+  - isbn: String
+  - titulo: String
+  - autor: String
+  - estado: EstadoLibro
+  + getIsbn(): String
+  + getTitulo(): String
+  + getAutor(): String
+  + estaDisponible(): Boolean
+}
+
+enum EstadoLibro {
+  DISPONIBLE
+  PRESTADO
+  RESERVADO
+}
+
+class Prestamo {
+  - idPrestamo: String
+  - libro: Libro
+  - usuario: Usuario
+  - fechaPrestamo: Date
+  - fechaDevolucionPrevista: Date
+  - fechaDevolucionReal: Date
+  + calcularMulta(): float
+}
+
+class Reporte {
+  - tipo: String
+  - contenido: String
+  - fechaGeneracion: Date
+}
+
+class Notificacion {
+    - destinatario: Persona
+    - mensaje: String
+    - fechaEnvio: Date
+}
+
+' Clase Principal del Sistema (Fachada/Controlador)
+class SistemaBiblioteca {
+  - libros: List<Libro>
+  - usuarios: List<Usuario>
+  - prestamos: List<Prestamo>
+  + buscarLibro(criterio: String): List<Libro>
+  + prestarLibro(usuarioId: String, libroIsbn: String): Prestamo
+  + devolverLibro(prestamoId: String): void
+  + registrarUsuario(datos: Map): Usuario
+  + catalogarLibro(datos: Map): Libro
+  + generarReporte(tipo: String): Reporte
+  + enviarNotificacion(prestamo: Prestamo): Notificacion
+}
+
+' Relaciones
+SistemaBiblioteca "1" o-- "*" Libro : gestiona >
+SistemaBiblioteca "1" o-- "*" Usuario : gestiona >
+SistemaBiblioteca "1" o-- "*" Bibliotecario : gestiona > ' Opcional, si los bibliotecarios son gestionados por el sistema
+SistemaBiblioteca "1" o-- "*" Prestamo : registra >
+
+Usuario "1" -- "*" Prestamo : realiza >
+Bibliotecario "1" -- "*" Prestamo : gestiona > ' Gestiona préstamos en general
+
+Prestamo "1" -- "1" Libro : incluye <
+Prestamo "1" -- "1" Usuario : para <
+
+Libro "1" -- "1" EstadoLibro : tiene >
+
+SistemaBiblioteca ..> Notificacion : crea y envía > ' Interacción para enviar notificación
+' Podría haber una relación con un sistema externo si "Sistema" es externo
+' SistemaBiblioteca ..> SistemaExternoNotificacion : envía
+
+' Notas adicionales basadas en el diagrama de casos de uso
+note right of SistemaBiblioteca::prestarLibro
+  Incluye buscarLibro()
+  Incluye enviarNotificacion()
+end note
+
+note right of SistemaBiblioteca::devolverLibro
+  Incluye buscarLibro() ' Para encontrar el préstamo/libro
+end note
+
+@enduml
