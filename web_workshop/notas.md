@@ -2,8 +2,8 @@
 
 | NOMBRE | EVA 1 Nota |  EVA 2 | EVA 3 | Promedio (eva 2-3) | FINAL |
 |:-------|:----------:|:------:|:------:|:------------------:|:------:|
-| 🟡 Benjamin Arturo Uribe Sanhueza |5.8| | | | |
-| 🟡 Luis Gustavo Zañartu Otarola   |2.3| | | | |
+| 🟡 Benjamin Arturo Uribe Sanhueza |5.8|14| | | |
+| 🟡 Luis Gustavo Zañartu Otarola   |2.3|14| | | |
 | 🟢 Catalina Constanza Toledo Mora |5.2|38| | | |
 | 🟢 Diego Nicolas Gonzalez Fuentes |6.4|38| | | |
 | 🔴 Daniel Esteban Romero Labra    |6.2|31| | | |
@@ -24,9 +24,9 @@
 
 | ACTIVIDAD               | PUNTOS | B. Uribe | C. Toledo | D. Gonzalez | L. Zañartu | D. Romero | F. Villa | J. Chavez | J. Aylwin | J. Beleño | P. Flores |
 | :---------------------- | :----- | :------- | :-------- | :---------- | :--------- | :-------- | :------- | :-------- | :-------- | :-------- | :-------- |
-| Participacion en clases | 5      |          |           |             |            |           |          |           |           |           |           |
+| Participacion en clases | 5      |          |           |  5          |            |           |          |           |           |           |           |
 | web test                | 10     |          |           |             |            |           |          |         |        |        |        |
-| ayudantia               | 15     |          |           |             |            |           |          |           |           |           |           |
+| ayudantia               | 15     |          |           |             |            |  15       |          |           |           |           |           |
 
 
 
