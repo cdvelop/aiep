@@ -1,5 +1,158 @@
 # Web Workshop
 
+
+# Actividad 2: 🏗️ Arquitecturas Web, 🧭 Ruteo y 🧩 Web Components Nativos
+
+**Puntaje Total:** 30 Puntos 💰
+
+**Objetivo:** Introducir los conceptos fundamentales de arquitecturas web modernas (SSR, SPA, PWA) y los **Web Components** nativos. Aplicar estos conocimientos para implementar un sistema de ruteo básico del lado del cliente (usando CSS o JavaScript) y crear un Web Component simple, conectando las diferentes vistas diseñadas en la Actividad 1 y preparando la estructura para la futura integración de funcionalidades.
+
+**Contexto:**
+Después de diseñar las interfaces de usuario (Actividad 1), el siguiente paso es estructurar la navegación y construir los componentes reutilizables de nuestra aplicación web.
+
+**1. 🏛️ Arquitecturas Web Modernas:**
+Las aplicaciones web modernas se construyen siguiendo diferentes **arquitecturas**:
+
+| Arquitectura             | Descripción                                                                 | Ventajas ✅                                       | Desventajas ❌                               | Tecnologías Ejemplo 🛠️                 |
+| :----------------------- | :-------------------------------------------------------------------------- | :------------------------------------------------ | :------------------------------------------- | :------------------------------------- |
+| **SSR** (Server-Side)  | El servidor genera el HTML completo para cada solicitud. Es el enfoque de renderizado usado por las **MPA (Multi-Page Applications)** tradicionales. | Bueno para SEO inicial, 1er render rápido.        | Recargas completas, carga en servidor.       | Go + `html/template`, PHP, Rails       |
+| **SPA** (Single-Page)  | La app (HTML, CSS, JS) se carga una vez. Navegación dinámica con JS y APIs. | Experiencia fluida, interacciones rápidas.       | SEO requiere atención, carga inicial pesada. | React, Angular, Vue, Svelte          |
+| **PWA** (Progressive)  | SPAs mejoradas con capacidades offline, instalación, notificaciones, etc. | Combina web y apps nativas, experiencia offline. | Mayor complejidad inicial.                   | Service Workers, Web App Manifest      |
+
+*   *[Video Sugerido 🎬: Explicación de MPA vs SPA]*
+[![MPA vs SPA](https://img.youtube.com/vi/2z0FChkphvo/0.jpg)](https://www.youtube.com/watch?v=2z0FChkphvo)
+*   *[Video Sugerido 🎬: Explicación PWA]*
+[![PWA](https://img.youtube.com/vi/oTA2BVrS3eU/0.jpg)](https://www.youtube.com/watch?v=oTA2BVrS3eU)
+
+**2. 🧭 Ruteo (Routing):**
+Es el mecanismo que determina qué contenido mostrar según la URL. Es crucial tanto en SSR como en SPA. En esta actividad nos centraremos en el **ruteo del lado del cliente**, que permite cambiar vistas sin recargar la página, clave para las SPAs.
+
+*   *[Video Sugerido 🎬: Client-Side Routing vanilla javascript (english)]*
+[![routing vanilla](https://img.youtube.com/vi/ZleShIpv5zQ/0.jpg)](https://www.youtube.com/watch?v=ZleShIpv5zQ)
+
+**3. 🧩 Web Components Nativos:**
+Antes de los frameworks como React o Vue, el navegador introdujo una forma estándar de crear **componentes reutilizables y encapsulados**: los Web Components. Se basan en tres tecnologías principales:
+
+*   ✨ **Custom Elements:** Define tus propias etiquetas HTML (ej: `<mi-boton>`).
+*   🔒 **Shadow DOM:** Encapsula HTML y CSS interno, evitando conflictos de estilos.
+*   📄 **HTML Templates (`<template>`):** Define fragmentos de HTML reutilizables.
+
+Entender los Web Components nativos ayuda a comprender cómo funcionan los frameworks modernos bajo el capó.
+
+*   *[Video Sugerido 🎬: Introducción a Web Components Nativos]*
+[![Web Components](https://img.youtube.com/vi/d2FCyAkPaLY/0.jpg)](https://www.youtube.com/watch?v=d2FCyAkPaLY)
+
+**📝 Instrucciones Detalladas:**
+
+1.  **🤔 Revisión y Planificación (GitHub Issues):**
+    *   **Acción:** Creen *Issues* en GitHub para cada tarea: `Definir Rutas`, `Implementar Router CSS/JS`, `Crear Web Component`, `Documentar`.
+    *   Analicen mockups (Actividad 1), identifiquen vistas/rutas (ej: `/`, `/login`, `/productos`) y listenas en el Issue `Definir Rutas`.
+
+2.  **🚀 Implementación de Ruteo Básico Client-Side (Elegir UNA opción):**
+    *   Objetivo: Simular navegación entre 2-3 vistas *sin recarga*, usando **marcadores de posición** (contenido HTML simple como `<h1>Título</h1>` para representar cada vista temporalmente).
+
+    *   **Opción A: 🎨 Ruteo con CSS (:target):**
+        *   Ideal para entender un mecanismo simple con `#`.
+        *   HTML: Contenedores (`div`, `section`) con `id` único por "página".
+        *   Navegación: Enlaces `<a>` con `href="#id_seccion"`.
+        *   CSS: Usar `:target` para mostrar/ocultar secciones. Añadir transiciones opcionales.
+            *   *Ejemplo Conceptual CSS:*
+              ```css
+              .page-section { display: none; /* ... */ }
+              .page-section:target { display: block; /* ... */ }
+              ```
+            *   *[Ejemplo en clases 🎬]*
+
+    *   **Opción B: 💻 Ruteo con JavaScript (History API):**
+        *   Más potente, base de routers SPA.
+        *   HTML Base (`web/public/index.html`): Contenedor `<div id="content">` y enlaces.
+        *   JavaScript (`web/public/js/router.js`): Usar `history.pushState`, `window.onpopstate` y lógica para cargar contenido en `#content`.
+            *   *Revisar ejemplo JS anterior.*
+            *   *[Video Sugerido 🎬: JavaScript Routing with History API]*
+            [![JS Routing with History API](https://img.youtube.com/vi/dEa1UP9qGtw/0.jpg)](https://www.youtube.com/watch?v=dEa1UP9qGtw)
+
+3.  **🧱 Creación de un Web Component Nativo Simple:**
+    *   **Objetivo:** Crear un componente reutilizable básico (ej: botón, tarjeta).
+    *   **Acción:**
+        *   Definir clase JS que extienda `HTMLElement`.
+        *   Crear Shadow Root (`this.attachShadow({mode: 'open'})`).
+        *   Definir HTML interno (string o `<template>`).
+        *   Añadir estilos encapsulados (`<style>`).
+        *   Registrar Custom Element (`customElements.define('mi-componente', MiClase);`).
+        *   Usar en HTML (`<mi-componente>`).
+    *   *Ejemplo Conceptual JS:*
+      ```javascript
+      class MiBoton extends HTMLElement { /* ... */ }
+      customElements.define('mi-boton', MiBoton);
+      ```
+    *   *[Video Sugerido 🎬: Creando un Web Components]*
+    [![Web Components](https://img.youtube.com/vi/n-wN5FJD8zw/0.jpg)](https://www.youtube.com/watch?v=n-wN5FJD8zw)
+
+
+4.  **🧪 Pruebas:**
+    *   Abrir `web/public/index.html`.
+    *   Verificar navegación (Opción A/B): URL/fragmento cambia, contenido actualiza *sin recarga*, botones atrás/adelante (Opción B) funcionan.
+    *   Verificar renderizado y estilos encapsulados del Web Component.
+
+5.  **📚 Documentación (`docs/design/routing-components.md`):**
+    *   **Acción:** Crear/Actualizar `docs/design/routing-components.md`. (Ver [ejemplo de estructura y contenido aquí](../material/docs/desing/routing-components.md)).
+    *   **Contenido:**
+        *   Lista de Rutas.
+        *   Enfoque de Ruteo (CSS/JS) + Justificación + Código clave.
+        *   Web Component Creado (Etiqueta, Propósito, Código clave).
+        *   Relación con Arquitecturas SPA.
+        *   Instrucciones de Prueba.
+        *   Enlaces a Issues de GitHub.
+
+6.  **✅ Entrega:**
+    *   **Acción:** Código y documentación en GitHub. Cerrar Issues mencionando commits.
+
+**📁 Ejemplo de Estructura de Carpetas Esperada (Actualizada):**
+
+```
+├── docs/
+│   ├── design/
+│   │   ├── ... (flows, mockups, styles)
+│   │   ├── routing-components.md <-- NUEVO/ACTUALIZADO
+│   │   └── ui-design.md
+│   └── ...
+├── web/
+│   ├── public/
+│   │   ├── css/                    <-- CSS (incluyendo para ruteo Opción A)
+│   │   │   └── main.css
+│   │   ├── fonts/                  <-- Fuentes
+│   │   ├── img/                    <-- Imágenes
+│   │   ├── js/
+│   │   │   ├── components/         <-- Carpeta sugerida para Web Components
+│   │   │   │   └── MiBoton.js
+│   │   │   ├── router.js           <-- (Si Opción Ruteo B)
+│   │   │   └── main.js             <-- (Opcional, JS general)
+│   │   └── index.html
+│   ├── main.server.go            <-- (Opcional, para servir archivos estáticos)
+│   └── ...
+├── ... (modules, go.mod, etc.)
+└── README.md
+```
+
+**⭐ Criterios de Evaluación (Sugeridos - 30 puntos):**
+
+| Criterio                             | Descripción                                                               | Puntos |
+| :----------------------------------- | :------------------------------------------------------------------------ | :----: |
+| **Gestión con GitHub Issues** 🔖     | Creación y uso adecuado de Issues para planificar y seguir el progreso.   |   4    |
+| **Definición de Rutas** 🗺️          | Lista clara y coherente basada en mockups.                                |   4    |
+| **Implementación Router Client-Side** 🚀 | Elección (CSS/JS) funcional (2-3 rutas), sin recarga, manejo estado.    |   8    |
+| **Implementación Web Component** 🧱  | Custom Element funcional con Shadow DOM, estilos encapsulados, uso HTML. |   8    |
+| **Documentación** 📚                 | `routing-components.md` completa, estructurada, con enlaces a Issues.    |   6    |
+| **Total**                            |                                                                           | **30** |
+
+
+<br><br>
+### La evaluación se realizará el día:
+**VIERNES 09-MAYO-2025 2da hora en clases**
+<br><br><br><br><br><br><br><br><br><br><br>
+---
+
+
 ## 🎯 Actividad 1: Diseño y Prototipado de Interfaces de Usuario
 
 *Nota: Este documento asume que los requisitos y casos de uso fueron definidos en la **Evaluación 3 de Análisis de Sistemas**. El archivo [ui-design.md](docs/design/ui-design.md) en este mismo directorio sirve como **ejemplo de la estructura y calidad esperada** para la documentación de diseño.*
@@ -157,152 +310,5 @@ La evaluación considerará la calidad del proceso y los entregables, distribuid
 
 🎯✨
 ---
-
-
-# Actividad 2: Taller de Desarrollo Web - Creación de API Básica con Go
-
-**Puntaje Total:** 20 Puntos (Sugerido, puede ajustarlo)
-
-**Objetivo:** Integrar el trabajo realizado en Análisis de Sistemas (modelado de clases en Go) con el desarrollo web, creando una API HTTP simple en Go que exponga funcionalidades básicas (lectura) relacionadas con las clases diseñadas, utilizando datos simulados y documentando la API.
-
-**Contexto:**
-En Análisis de Sistemas (Evaluación 4), están diseñando y creando las estructuras de datos (`structs`) en Go (`modules/[module_name]/` como `modules/user/user.go` o similar) que representan las entidades principales de sus sistemas. En este taller, haremos que esas estructuras sean accesibles a través de la web mediante una API RESTful simple usando el paquete `net/http` de Go. Esto sienta las bases para futuras interfaces de usuario.
-
-**Instrucciones Detalladas:**
-
-1.  **Reutilizar Structs de Go:**
-    *   Asegúrese de tener las `structs` de Go definidas en la Evaluación 4 de Análisis de Sistemas (ubicadas en carpetas como `modules/user/`, `modules/login/` o similares) disponibles en su proyecto. Estas serán los "modelos" de datos que su API manejará.
-
-2.  **Configurar Servidor HTTP y Rutas:**
-    *   En su archivo principal (ej: `web/main.server.go`), importe el paquete `net/http`.
-    *   Cree una función `main` (o modifique la existente) para iniciar un servidor HTTP que escuche en un puerto (ej: `:8080`).
-    *   Utilice `http.HandleFunc` para registrar al menos dos *endpoints* (rutas) para su API. Elija entidades relevantes de su sistema:
-        *   **Endpoint de Lista:** Para obtener una lista de todos los elementos de un tipo.
-            *   Ruta: `/api/v1/[nombre-entidad-plural]` (ej: `/api/v1/users`, `/api/v1/products`)
-            *   Método HTTP: `GET`
-        *   **Endpoint de Detalle:** Para obtener un elemento específico por su ID.
-            *   Ruta: `/api/v1/[nombre-entidad-plural]/{id}` (ej: `/api/v1/users/{id}`)
-            *   Método HTTP: `GET`
-    *   Inicie el servidor con `http.ListenAndServe`.
-
-3.  **Simulación de Datos:**
-    *   Cree un *slice* global (o accesible por los handlers) en su código Go para almacenar datos de ejemplo.
-    *   Poble este slice con 2-3 instancias de sus `structs` definidas en Análisis de Sistemas. Asigne IDs únicos a cada instancia.
-    *   Ejemplo (en `web/main.server.go`):
-      ```go
-      package main
-
-      import (
-          "encoding/json"
-          "net/http"
-          "strconv"
-          "strings" // Para manejar la ruta con ID
-          "github.com/[su-usuario]/[su-repo]/modules/user" // IMPORTE SUS MÓDULOS
-      )
-
-      var listaUsers = []user.User{
-          {ID: 1, Nombre: "Alice", Activo: true},
-          {ID: 2, Nombre: "Bob", Activo: false},
-          {ID: 3, Nombre: "Charlie", Activo: true},
-      }
-
-      // ... (resto del código del servidor y handlers)
-      ```
-
-4.  **Implementar los Handlers:**
-    *   Cree una función *handler* separada para cada ruta registrada.
-    *   **Handler de Lista:**
-        *   Debe verificar que el método HTTP sea `GET`. Si no, devolver un error (ej: `http.StatusMethodNotAllowed`).
-        *   Establecer el `Content-Type` de la respuesta a `application/json`.
-        *   Codificar el slice completo de datos simulados a JSON usando `json.NewEncoder(w).Encode(listaUsuarios)`.
-        *   Manejar posibles errores de codificación.
-    *   **Handler de Detalle:**
-        *   Debe verificar que el método HTTP sea `GET`.
-        *   Extraer el `{id}` de la URL (`r.URL.Path`). Puede necesitar `strings.Split` o un router más avanzado (opcional por ahora).
-        *   Convertir el ID de string a `int` (`strconv.Atoi`). Manejar errores si el ID no es un número válido (`http.StatusBadRequest`).
-        *   Buscar en el slice el elemento con ese ID.
-        *   Si se encuentra: Establecer `Content-Type` a `application/json`, codificar el elemento encontrado a JSON y enviarlo.
-        *   Si no se encuentra: Devolver un error `http.StatusNotFound`.
-
-5.  **Probar la API:**
-    *   Compile (`go build -o web/main.server.exe web/main.server.go`) y ejecute su servidor (`./web/main.server.exe`).
-    *   Use `curl` o una herramienta similar para probar:
-        *   `curl http://localhost:8080/api/v1/users` (Debería devolver la lista JSON)
-        *   `curl http://localhost:8080/api/v1/users/2` (Debería devolver el usuario con ID 2 en JSON)
-        *   `curl http://localhost:8080/api/v1/users/99` (Debería devolver un error 404)
-        *   `curl -X POST http://localhost:8080/api/v1/users` (Debería devolver un error 405 Method Not Allowed)
-
-6.  **Documentación en README:**
-    *   Cree un archivo `README.md` específico para esta evaluación dentro de la carpeta `docs/design/api.md` en su repositorio de proyecto.
-    *   **Contenido del api.md:**
-        *   **Título:** Evaluación 3 - API Web Básica.
-        *   **Descripción:** Breve descripción de la API y su propósito.
-        *   **Endpoints:** Liste los endpoints implementados, incluyendo:
-            *   Método HTTP (GET)
-            *   Ruta (ej: `/api/v1/users`)
-            *   Descripción de lo que hace.
-            *   Ejemplo de respuesta JSON exitosa (en bloque de código).
-            *   Posibles respuestas de error (ej: 404 Not Found, 405 Method Not Allowed).
-        *   **Cómo Ejecutar:** Instrucciones breves para compilar y ejecutar el servidor.
-        *   **Cómo Probar:** Incluya los comandos `curl` (o similar) para probar cada endpoint.
-        *   **Código Relevante:** Incluya fragmentos del código de los handlers y la configuración del servidor.
-
-7.  **Entrega:**
-    *   Asegúrese de que todo el código Go nuevo o modificado (`web/main.server.go`, handlers si están separados) y el archivo `docs/design/api.md` de la evaluación estén commiteados y pusheados a su repositorio de GitHub.
-
-**Ejemplo de Estructura de Carpetas Esperada (Dentro de su Repo):**
-
-```
-├── docs/
-│   ├── analysis/                  # Documentación de Análisis
-│   │   ├── diagrams/
-│   │   │   ├── class/
-│   │   │   ├── usecases/
-│   │   │   └── ... (otros diagramas)
-│   │   ├── class.md
-│   │   ├── usecases.md
-│   │   └── ... (otros docs)
-│   ├── design/
-│   │   ├── api.md                <-- AQUÍ documentación de API
-│   │   └── ui-design.md
-│   └── ...
-├── modules/
-│   ├── user/                     <-- Structs definidas en Eva4
-│   │   ├── handler.go            <-- AQUÍ (opcional, si separa handlers)
-│   │   ├── user.go
-│   │   ├── repository.go
-│   │   └── service.go
-│   ├── login/
-│   │   └── ...
-│   └── modules.go
-├── web/                          <-- AQUÍ
-│   ├── main.server.go            <-- Servidor HTTP y punto de entrada
-│   ├── main.server.exe           <-- Binario ejecutable
-│   ├── public/
-│   │   └── ... (archivos web)
-│   └── ...
-├── go.mod
-├── go.sum
-└── README.md
-```
-
-**Criterios de Evaluación:**
-
-*   Correcta configuración y ejecución del servidor HTTP (`net/http`). (4 pts)
-*   Definición y registro funcional de al menos dos endpoints (Lista y Detalle). (4 pts)
-*   Implementación correcta de handlers: manejo de método GET, extracción de ID (si aplica), interacción con datos simulados. (5 pts)
-*   Correcta codificación de respuestas JSON y manejo básico de errores HTTP (404, 405). (4 pts)
-*   Calidad y completitud de la documentación en el `README.md` específico (descripción endpoints, ejemplos curl, código). (3 pts)
-
-**Recursos:**
-
-*   Código Go de la Actividad 2 Eva 3 de Análisis de Sistemas (`modules/`).
-*   Documentación `net/http`: [https://pkg.go.dev/net/http](https://pkg.go.dev/net/http)
-*   Documentación `encoding/json`: [https://pkg.go.dev/encoding/json](https://pkg.go.dev/encoding/json)
-*   Documentación `strconv`: [https://pkg.go.dev/strconv](https://pkg.go.dev/strconv)
-*   Tutorial: Building a simple web server in Go
-
----
-
 
 
