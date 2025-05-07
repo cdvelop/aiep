@@ -21,5 +21,5 @@
 ### BLRoyale
 #### integrantes:
 - Benjamin Uribe
-- Luis Zeñartu
+- Luis Zeñartu(REPO OWNER)
 
