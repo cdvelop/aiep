@@ -1,0 +1,55 @@
+Problemas de GitHub por diagrama (módulo):
+Lista de GitHub Issues por módulo – BL Royale:
+1. Autenticación
+Título: [Auth] Implementar sistema de creación e inicio de sesión de usuarios
+
+Descripción:
+Desarrollar las funcionalidades de creación de cuentas nuevas, inicio de sesión y recuperación de contraseña para los jugadores. Asegurar la autenticación segura y la validación de datos.
+
+Etiquetas: backend, auth, prioridad-alta
+2. Gestión de Personaje
+Título: [Character Management] Personalización de personajes y asignación de habilidades
+
+Descripción:
+Crear un sistema donde los jugadores puedan seleccionar personajes, aplicar skins, configurar emotes y asignar habilidades especiales antes de iniciar una partida.
+Etiquetas: frontend, gameplay, UI/UX, prioridad-media
+
+3. Matchmaking y Juego
+Título: [Matchmaking] Sistema de búsqueda y emparejamiento de partidas
+
+Descripción:
+Desarrollar un sistema automático de matchmaking que agrupe a los jugadores según nivel y modo de juego elegido. Debe incluir lógica de cancelación de búsqueda.
+Etiquetas: backend, networking, gameplay, prioridad-alta
+
+4. Comunicación
+Título: [Communication] Chat de voz y texto dentro de partidas
+Descripción:
+Implementar un sistema de comunicación en tiempo real, con canales de texto y voz, además de la posibilidad de silenciar a otros jugadores.
+
+Etiquetas: networking, voice-chat, chat, prioridad-media
+
+5. Recompensas y Progresión
+Título: [Rewards] Sistema de recompensas, niveles y desbloqueo de contenido
+Descripción:
+Crear un motor de recompensas para otorgar experiencia, cofres, monedas y desbloqueo de contenido tras completar partidas y logros.
+Etiquetas: gameplay, progression, backend, prioridad-media
+
+6. Tienda y Microtransacciones
+Título: [Shop] Desarrollo de tienda in-game y pase de batalla
+
+Descripción:
+Diseñar una tienda dentro del juego para vender cosméticos y pases de batalla utilizando monedas del juego o dinero real.
+Etiquetas: monetization, frontend, backend, prioridad-media
+
+7. Reportes y Moderación
+Título: [Moderation] Sistema de reportes de jugadores y revisión por administradores
+Descripción:
+Desarrollar un sistema que permita a los jugadores reportar usuarios tóxicos o tramposos, y habilitar a moderadores a revisar dichos reportes y aplicar sanciones.
+Etiquetas: security, backend, admin, prioridad-alta
+ Extra: Issue General de Proyecto
+Título: [General] Coordinación de módulos y entrega de primera versión jugable (MVP)
+
+Descripción:
+Gestionar la integración de todos los módulos principales en un primer prototipo funcional de BL Royale. Definir dependencias entre equipos.
+
+Etiquetas: management, coordination, prioridad-alta
