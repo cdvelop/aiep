@@ -1,8 +1,6 @@
 package main
 
-import "github.com/cdvelop/aiep/systems_analysis/material/poo/libro"
-
-func main() {
+/* func main() {
 
 	m := libro.ManejadorLibros{}
 
@@ -22,3 +20,4 @@ func main() {
 	m.MostrarLibros()
 
 }
+*/
