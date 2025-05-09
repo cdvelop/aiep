@@ -24,5 +24,5 @@
 
 | ACTIVIDAD               | PUNTOS | B. Uribe | C. Toledo | D. Gonzalez | L. Zañartu | D. Romero | F. Villa | J. Chavez | J. Aylwin | J. Beleño | P. Flores |
 | :---------------------- | :----- | :------- | :-------- | :---------- | :--------- | :-------- | :------- | :-------- | :-------- | :-------- | :-------- |
-| Participacion en clases | 5      |          |           |             |            |           |          |           |           |           |           |
+| Participacion en clases | 5      |          |           |             |            |           |   5       |           |           |           |           |
 | ayudantia               | 15     |          |           |             |     15       |           |          |           |           |           |           |
