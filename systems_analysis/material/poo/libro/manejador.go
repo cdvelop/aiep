@@ -9,7 +9,7 @@ func (m *ManejadorLibros) AgregarLibro(l Libro) {
 	// y asignar el valor
 	// ej: value := GetValue("genero x")
 
-	// buscar si existe el libro
+	// // buscar si existe el libro
 	// libroExistente, existe := m.existeLibro(l)
 	// if existe {
 
@@ -21,13 +21,13 @@ func (m *ManejadorLibros) AgregarLibro(l Libro) {
 }
 
 // func (m ManejadorLibros) existeLibro(libroNuevo Libro) (Libro, bool) {
-// 	for _, libroExistente := range m.libros {
-// 		if libroExistente.Titulo == libroNuevo.Titulo {
-// 			return libroExistente, true
-// 		}
-// 	}
+// 	// for _, libroExistente := range m.libros {
+// 	// 	if libroExistente.Titulo == libroNuevo.Titulo {
+// 	// 		return libroExistente, true
+// 	// 	}
+// 	// }
 
-// 	return nil, false
+// 	// return nil, false
 // }
 
 func (m ManejadorLibros) MostrarLibros() {

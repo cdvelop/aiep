@@ -6,12 +6,12 @@
 | 🟡 Luis Gustavo Zañartu Otarola   |2.3|14| | | |
 | 🟢 Catalina Constanza Toledo Mora |5.2|38| | | |
 | 🟢 Diego Nicolas Gonzalez Fuentes |6.4|38| | | |
-| 🔴 Daniel Esteban Romero Labra    |6.2|31| | | |
-| 🔴 Francisco Javier Villa Faundez |6.9|31| | | |
-| 🔴 Jose Ignacio Chavez Leiva      |4.1|41| | | |
-| 🔵 Jose Manuel Aylwin Troncoso    |7.0|38| | | |
-| 🔵 Juan Alirio Beleño             |6.4|38| | | |
-| 🔵 Pedro Jose Flores Medina       |5.4|38| | | |
+| 🔴 Daniel Esteban Romero Labra    |6.2|5.1| | | |
+| 🔴 Francisco Javier Villa Faundez |6.9|5.1| | | |
+| 🔴 Jose Ignacio Chavez Leiva      |4.1|6.1| | | |
+| 🔵 Jose Manuel Aylwin Troncoso    |7.0|6.8| | | |
+| 🔵 Juan Alirio Beleño             |6.4|6.8| | | |
+| 🔵 Pedro Jose Flores Medina       |5.4|6.8| | | |
 
 **Leyenda:**
 - 🔴 Supported
