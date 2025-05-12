@@ -1,7 +1,7 @@
 package libro
 
 type Libro struct {
-	id    string
-	name  string
-	autor string
+	ID    int    `json:"id"`
+	Name  string `json:"titulo"`
+	Autor string `json:"autor"`
 }

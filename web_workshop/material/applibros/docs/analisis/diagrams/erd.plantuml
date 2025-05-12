@@ -1,0 +1,34 @@
+@startuml
+entity Libro {
++ID : int
+--
+Titulo : string
+AutorID : string
+GeneroID : string
+}
+
+entity Autor {
++ID : string
+--
+Nombre : string
+}
+
+entity Genero {
++ID : string
+--
+Nombre : string
+}
+
+entity Imagen {
++ID : string
+--
+LibroID : string
+URL : string
+Descripcion : string
+}
+
+Libro }o--|| Autor : pertenece a
+Libro }o--|| Genero : clasificado en
+Libro ||--o{ Imagen : contiene
+
+@enduml
