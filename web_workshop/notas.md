@@ -2,8 +2,8 @@
 
 | NOMBRE | EVA 1 Nota |  EVA 2 | EVA 3 | Promedio (eva 2-3) | FINAL |
 |:-------|:----------:|:------:|:------:|:------------------:|:------:|
-| 🟡 Benjamin Arturo Uribe Sanhueza |5.8|14| | | |
-| 🟡 Luis Gustavo Zañartu Otarola   |2.3|14| | | |
+| 🟡 Benjamin Arturo Uribe Sanhueza |5.8|2.5| | | |
+| 🟡 Luis Gustavo Zañartu Otarola   |2.3|4.0| | | |
 | 🟢 Catalina Constanza Toledo Mora |5.2|6.3| | | |
 | 🟢 Diego Nicolas Gonzalez Fuentes |6.4|6.8| | | |
 | 🔴 Daniel Esteban Romero Labra    |6.2|5.1| | | |
