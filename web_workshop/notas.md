@@ -4,8 +4,8 @@
 |:-------|:----------:|:------:|:------:|:------------------:|:------:|
 | 🟡 Benjamin Arturo Uribe Sanhueza |5.8|14| | | |
 | 🟡 Luis Gustavo Zañartu Otarola   |2.3|14| | | |
-| 🟢 Catalina Constanza Toledo Mora |5.2|38| | | |
-| 🟢 Diego Nicolas Gonzalez Fuentes |6.4|38| | | |
+| 🟢 Catalina Constanza Toledo Mora |5.2|63| | | |
+| 🟢 Diego Nicolas Gonzalez Fuentes |6.4|68| | | |
 | 🔴 Daniel Esteban Romero Labra    |6.2|5.1| | | |
 | 🔴 Francisco Javier Villa Faundez |6.9|5.1| | | |
 | 🔴 Jose Ignacio Chavez Leiva      |4.1|6.1| | | |
@@ -24,7 +24,7 @@
 
 | ACTIVIDAD               | PUNTOS | B. Uribe | C. Toledo | D. Gonzalez | L. Zañartu | D. Romero | F. Villa | J. Chavez | J. Aylwin | J. Beleño | P. Flores |
 | :---------------------- | :----- | :------- | :-------- | :---------- | :--------- | :-------- | :------- | :-------- | :-------- | :-------- | :-------- |
-| Participacion en clases | 5      |          |           |  5          |            |           |          |           |           |           |           |
+| Participacion en clases | 5      |          |           |             |            |           |          |           |           |           |           |
 | web test                | 10     |          |           |             |            |           |          |         |        |        |        |
 | ayudantia               | 15     |          |           |             |            |  15       |          |           |           |           |           |
 
