@@ -10,25 +10,25 @@ func (m *ManejadorLibros) AgregarLibro(l Libro) {
 	// ej: value := GetValue("genero x")
 
 	// buscar si existe el libro
-	libroExistente, existe := m.existeLibro(l)
-	if existe {
+	// libroExistente, existe := m.existeLibro(l)
+	// if existe {
 
-	}
+	// }
 
-	l.valor = 10000
-	l.estaElLibro = true
-	m.libros = append(m.libros, l)
+	// l.valor = 10000
+	// l.estaElLibro = true
+	// m.libros = append(m.libros, l)
 }
 
-func (m ManejadorLibros) existeLibro(libroNuevo Libro) (Libro, bool) {
-	for _, libroExistente := range m.libros {
-		if libroExistente.Titulo == libroNuevo.Titulo {
-			return libroExistente, true
-		}
-	}
+// func (m ManejadorLibros) existeLibro(libroNuevo Libro) (Libro, bool) {
+// 	for _, libroExistente := range m.libros {
+// 		if libroExistente.Titulo == libroNuevo.Titulo {
+// 			return libroExistente, true
+// 		}
+// 	}
 
-	return nil, false
-}
+// 	return nil, false
+// }
 
 func (m ManejadorLibros) MostrarLibros() {
 	println("Libros en la biblioteca:")

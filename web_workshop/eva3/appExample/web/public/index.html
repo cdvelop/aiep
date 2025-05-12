@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book CRUD Example</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Book Management Example</h1>
+
+    <div id="auth-section">
+        <h2>Authentication</h2>
+        <div id="login-form">
+            <h3>Login</h3>
+            <input type="text" id="login-username" placeholder="Username" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button id="login-button">Login</button>
+        </div>
+        <div id="register-form">
+            <h3>Register</h3>
+            <input type="text" id="register-username" placeholder="Username" required>
+            <input type="password" id="register-password" placeholder="Password" required>
+            <select id="register-role">
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select>
+            <button id="register-button">Register</button>
+        </div>
+        <p id="auth-message" class="message"></p>
+    </div>
+
+    <div id="app-section" style="display: none;"> <!-- Hidden until logged in -->
+        <h2>Welcome, <span id="username-display"></span>! (<span id="role-display"></span>) <button id="logout-button">Logout</button></h2>
+
+        <hr>
+
+        <h2>Book List</h2>
+        <!-- The Web Component will be placed here -->
+        <book-list id="book-list-component"></book-list>
+        <p id="book-message" class="message"></p>
+
+    </div>
+
+    <!-- Include Web Component and App Logic -->
+    <script src="js/components/BookList.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
