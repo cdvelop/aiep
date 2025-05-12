@@ -30,5 +30,6 @@ Descripcion : string
 Libro }o--|| Autor : pertenece a
 Libro }o--|| Genero : clasificado en
 Libro ||--o{ Imagen : contiene
+Autor }o--o{ Genero : trabaja en
 
 @enduml
