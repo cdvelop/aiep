@@ -1,94 +1,94 @@
-# Evaluación 3 - App Example: Book CRUD
+# Evaluación 3 - Ejemplo de Aplicación: CRUD de Libros
 
-This directory contains a simplified example application demonstrating the concepts required for Evaluación 3 of the Web Workshop. It features a Go backend API and a JavaScript frontend with a Web Component.
+Este directorio contiene una aplicación de ejemplo simplificada que demuestra los conceptos requeridos para la Evaluación 3 del Taller Web. Presenta una API backend en Go y un frontend en JavaScript con un Web Component.
 
-**Entity:** Book (`id`, `title`, `author`, `year`)
-**User Roles:** `user`, `admin`
+**Entidad:** Libro (`id`, `title`, `author`, `year`)
+**Roles de Usuario:** `user`, `admin`
 
-## Features Implemented (Simplified)
+## Características Implementadas (Simplificado)
 
 **Backend (Go - `web/main.server.go`):**
-*   In-memory storage for books and users.
-*   **Authentication:**
-    *   `POST /api/auth/register`: User registration (username, password, role). Passwords are hashed using `bcrypt`.
-    *   `POST /api/auth/login`: User login. Sets an HTTP-only session cookie.
-    *   `POST /api/auth/logout`: Invalidates the session cookie.
-*   **Book CRUD API (`/api/v1/books`):**
-    *   `GET /api/v1/books`: List all books (requires login).
-    *   `POST /api/v1/books/create`: Create a new book (requires admin role).
-    *   `GET /api/v1/books/{id}`: Get a specific book (requires login).
-    *   `PUT /api/v1/books/{id}`: Update a book (requires admin role).
-    *   `DELETE /api/v1/books/{id}`: Delete a book (requires admin role).
+*   Almacenamiento en memoria para libros y usuarios.
+*   **Autenticación:**
+    *   `POST /api/auth/register`: Registro de usuario (nombre de usuario, contraseña, rol). Las contraseñas se hashean usando `bcrypt`.
+    *   `POST /api/auth/login`: Inicio de sesión de usuario. Establece una cookie de sesión HTTP-only.
+    *   `POST /api/auth/logout`: Invalida la cookie de sesión.
+*   **API CRUD de Libros (`/api/v1/books`):**
+    *   `GET /api/v1/books`: Listar todos los libros (requiere inicio de sesión).
+    *   `POST /api/v1/books/create`: Crear un nuevo libro (requiere rol de administrador).
+    *   `GET /api/v1/books/{id}`: Obtener un libro específico (requiere inicio de sesión).
+    *   `PUT /api/v1/books/{id}`: Actualizar un libro (requiere rol de administrador).
+    *   `DELETE /api/v1/books/{id}`: Eliminar un libro (requiere rol de administrador).
 *   **Middleware:**
-    *   `authMiddleware`: Protects routes, checks session cookies, and verifies user roles for authorization.
-*   Serves static frontend files from `./public`.
+    *   `authMiddleware`: Protege rutas, verifica cookies de sesión y roles de usuario para autorización.
+*   Sirve archivos frontend estáticos desde `./public`.
 
 **Frontend (HTML/CSS/JS - `web/public/`):**
-*   `index.html`: Basic page structure with auth forms and an area for the book list.
-*   `css/style.css`: Basic styling.
+*   `index.html`: Estructura básica de la página con formularios de autenticación y un área para la lista de libros.
+*   `css/style.css`: Estilos básicos.
 *   `js/components/BookList.js`:
-    *   A Web Component (`<book-list>`) using Shadow DOM.
-    *   Displays a list of books in a table.
-    *   Provides a form for adding/editing books (visible to admins).
-    *   Includes "Edit" and "Delete" buttons for each book (visible to admins).
-    *   Dispatches custom events (`book-create`, `book-update`, `book-delete`).
-    *   Accepts `setBooks()` and `setUserRole()` methods to update its state.
+    *   Un Web Component (`<book-list>`) usando Shadow DOM.
+    *   Muestra una lista de libros en una tabla.
+    *   Proporciona un formulario para agregar/editar libros (visible para administradores).
+    *   Incluye botones "Editar" y "Eliminar" para cada libro (visible para administradores).
+    *   Despacha eventos personalizados (`book-create`, `book-update`, `book-delete`).
+    *   Acepta los métodos `setBooks()` y `setUserRole()` para actualizar su estado.
 *   `js/app.js`:
-    *   Handles user login, registration, and logout using `fetch` to call the backend.
-    *   Manages UI state (showing/hiding auth vs. app sections).
-    *   Fetches books after login.
-    *   Listens to custom events from `<book-list>` to make API calls for CRUD operations.
-    *   Updates the `<book-list>` component with data and user role.
+    *   Maneja el inicio de sesión, registro y cierre de sesión del usuario usando `fetch` para llamar al backend.
+    *   Gestiona el estado de la interfaz de usuario (mostrando/ocultando secciones de autenticación vs. aplicación).
+    *   Obtiene los libros después del inicio de sesión.
+    *   Escucha eventos personalizados de `<book-list>` para realizar llamadas API para operaciones CRUD.
+    *   Actualiza el componente `<book-list>` con datos y el rol del usuario.
 
-## How to Run
+## Cómo Ejecutar
 
-1.  **Navigate to the Backend Directory:**
+1.  **Navega al Directorio del Backend:**
     ```bash
     cd web_workshop/eva3/appExample
     ```
 
-2.  **Ensure Dependencies are Downloaded:**
-    If you haven't already, or if `go.mod` changed:
+2.  **Asegúrate de que las Dependencias estén Descargadas:**
+    Si aún no lo has hecho, o si `go.mod` cambió:
     ```bash
     go mod tidy
     ```
 
-3.  **Build the Go Application:**
-    (From the `web_workshop/eva3/appExample` directory)
+3.  **Construye la Aplicación Go:**
+    (Desde el directorio `web_workshop/eva3/appExample`)
     ```bash
     go build -o web/main.server.exe ./web/main.server.go
     ```
-    (For Linux/macOS, use `-o web/main.server` or similar)
+    (Para Linux/macOS, usa `-o web/main.server` o similar)
 
-4.  **Run the Go Server:**
-    (From the `web_workshop/eva3/appExample` directory)
+4.  **Ejecuta el Servidor Go:**
+    (Desde el directorio `web_workshop/eva3/appExample`)
     ```bash
     ./web/main.server.exe
     ```
-    (For Linux/macOS, use `./web/main.server`)
+    (Para Linux/macOS, usa `./web/main.server`)
 
-    The server will start on `http://localhost:8080`.
+    El servidor se iniciará en `http://localhost:8080`.
 
-5.  **Open the Frontend in a Browser:**
-    Navigate to `http://localhost:8080/` in your web browser.
+5.  **Abre el Frontend en un Navegador:**
+    Navega a `http://localhost:8080/` en tu navegador web.
 
-## Testing
+## Pruebas
 
-*   **Register** a new user (e.g., `user1` with role `user`, and `admin1` with role `admin`).
-*   **Login** with the created users.
-*   **Normal User (`user1`):**
-    *   Should be able to see the list of books.
-    *   Should NOT see the "Add New Book" form or "Edit"/"Delete" buttons.
-*   **Admin User (`admin1`):**
-    *   Should be able to see the list of books.
-    *   Should see and be able to use the "Add New Book" form.
-    *   Should see and be able to use the "Edit" and "Delete" buttons for each book.
-*   **Logout** and verify access is restricted.
+*   **Registra** un nuevo usuario (p. ej., `user1` con rol `user`, y `admin1` con rol `admin`).
+*   **Inicia sesión** con los usuarios creados.
+*   **Usuario Normal (`user1`):**
+    *   Debería poder ver la lista de libros.
+    *   NO debería ver el formulario "Agregar Nuevo Libro" ni los botones "Editar"/"Eliminar".
+*   **Usuario Administrador (`admin1`):**
+    *   Debería poder ver la lista de libros.
+    *   Debería ver y poder usar el formulario "Agregar Nuevo Libro".
+    *   Debería ver y poder usar los botones "Editar" y "Eliminar" para cada libro.
+*   **Cierra sesión** y verifica que el acceso esté restringido.
 
-## Notes
+## Notas
 
-*   This is a **simplified example**. A production application would use a proper database, more robust session management, more comprehensive error handling, input validation, and potentially a more advanced router.
-*   The focus is on demonstrating the core interaction between a Go backend with auth/permissions and a JS frontend with a Web Component performing CRUD.
-*   The `createBookHandler` in Go uses the path `/api/v1/books/create` for POST requests to simplify routing without an external library. The main `/api/v1/books/` path with an ID handles GET (by ID), PUT, and DELETE.
+*   Este es un **ejemplo simplificado**. Una aplicación de producción usaría una base de datos adecuada, una gestión de sesiones más robusta, un manejo de errores más completo, validación de entradas y potencialmente un enrutador más avanzado.
+*   El enfoque está en demostrar la interacción central entre un backend Go con autenticación/permisos y un frontend JS con un Web Component realizando CRUD.
+*   El `createBookHandler` en Go usa la ruta `/api/v1/books/create` para las solicitudes POST para simplificar el enrutamiento sin una biblioteca externa. La ruta principal `/api/v1/books/` con un ID maneja GET (por ID), PUT y DELETE.
 
-Refer to the main `activity3.md` for the full evaluation requirements.
+Consulta el archivo `activity3.md` principal para conocer los requisitos completos de la evaluación.
