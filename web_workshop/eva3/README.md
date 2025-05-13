@@ -53,6 +53,10 @@ Esta evaluación integra los conocimientos de Análisis de Sistemas (modelado de
     *   Defina roles simples (ej: "admin", "user") en la struct `User`.
     *   Restrinja acciones (ej: `DELETE` solo para "admin"). Sin permiso -> `403 Forbidden`.
 
+
+*   *[Video Sugerido 🎬: Routing Con Go y la librería Estándar (english)]*
+[![routing go net http](https://img.youtube.com/vi/H7tbjKFSg58/0.jpg)](https://www.youtube.com/watch?v=H7tbjKFSg58)
+
 ---
 
 ## Parte 2: 🖥️ Frontend - Cliente Web con JS Nativo y Web Component (20 Puntos)
