@@ -17,7 +17,13 @@ func main() {
 	// se cierra al final
 	defer db.Close()
 
-	http.HandleFunc("/libros", libro.ObtenerLibros(db))
+	fs := http.FileServer(http.Dir("./public"))
+	// Serve static files from the root path "/"
+	// Need to strip prefix if handlers above conflict, or use a subpath like /static/
+	http.Handle("/", fs) // Be careful: This might catch API calls if not handled above
+
+	http.HandleFunc("GET /books", libro.ObtenerLibros(db))
+	http.HandleFunc("POST /books", libro.CrearLibro(db))
 
 	fmt.Println("Servidor iniciado en http://localhost:8080")
 	log.Fatal(http.ListenAndServe(":8080", nil))

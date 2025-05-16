@@ -57,9 +57,33 @@ function addBook(e) {
         books.push(newBook);
     }
 
+
+
     clearForm();
     displayBooks();
+
+    storageBooksInServer();
 }
+
+
+function storageBooksInServer() {
+    // enviar el formulario al servidor
+    const formData = new FormData(bookForm);
+    fetch('/books', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+
+}
+
+
 
 function editBook(id) {
     const book = books.find(book => book.id === id);
