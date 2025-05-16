@@ -33,35 +33,8 @@ function displayBooks() {
 function addBook(e) {
     e.preventDefault();
 
-    const id = idInput.value;
-    const title = titleInput.value;
-    const author = authorInput.value;
-    const genre = genreInput.value;
-    const image = imageInput.value;
 
-    if (id) {
-        // Update existing book
-        const bookIndex = books.findIndex(book => book.id === parseInt(id));
-        if (bookIndex !== -1) {
-            books[bookIndex] = { id: parseInt(id), title, author, genre, image };
-        }
-    } else {
-        // Create new book
-        const newBook = {
-            id: books.length > 0 ? books[books.length - 1].id + 1 : 1,
-            title,
-            author,
-            genre,
-            image
-        };
-        books.push(newBook);
-    }
-
-
-
-    clearForm();
-    displayBooks();
-
+    // almacenar los libros en la base de datos del servidor
     storageBooksInServer();
 }
 
@@ -69,17 +42,79 @@ function addBook(e) {
 function storageBooksInServer() {
     // enviar el formulario al servidor
     const formData = new FormData(bookForm);
+
+
+    // Verificar que los datos se capturaron correctamente
+    console.log('FormData contenido:');
+    for (let pair of formData.entries()) {
+        console.log(pair[0] + ': ' + pair[1]);
+    }
+
     fetch('/books', {
         method: 'POST',
         body: formData
     })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Success:', data);
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-    });
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error en la respuesta del servidor: ' + response.status);
+            }
+
+            // Comprobar si hay contenido en la respuesta
+            const contentType = response.headers.get("content-type");
+            if (contentType && contentType.indexOf("application/json") !== -1) {
+                return response.json();
+            } else {
+                // La respuesta no es JSON
+                console.log("Respuesta del servidor no es JSON:", response);
+                return {}; // Devolver un objeto vacío o según lo necesites
+            }
+        })
+        .then(data => {
+            console.log('Success:', data);
+
+
+            const id = idInput.value;
+            const title = titleInput.value;
+            const author = authorInput.value;
+            const genre = genreInput.value;
+            const image = imageInput.value;
+
+            if (id) {
+                // Update existing book
+                const bookIndex = books.findIndex(book => book.id === parseInt(id));
+                if (bookIndex !== -1) {
+                    books[bookIndex] = { id: parseInt(id), title, author, genre, image };
+                }
+            } else {
+                // Create new book
+                const newBook = {
+                    id: books.length > 0 ? books[books.length - 1].id + 1 : 1,
+                    title,
+                    author,
+                    genre,
+                    image
+                };
+                books.push(newBook);
+            }
+
+
+            // borrar el formulario
+            clearForm();
+            // mostrar los libros
+            displayBooks();
+
+
+
+        })
+        .catch((error) => {
+            if (error instanceof SyntaxError) {
+                console.error('Error de formato en la respuesta del servidor:', error);
+                // alert('El servidor devolvió una respuesta con formato incorrecto');
+            } else {
+                console.error('Error:', error);
+                // alert('Error al comunicarse con el servidor: ' + error.message);
+            }
+        });
 
 }
 

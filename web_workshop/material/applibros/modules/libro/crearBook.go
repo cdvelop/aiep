@@ -9,10 +9,14 @@ import (
 func CrearLibro(db *sql.DB) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 
-		// parsear formulario
-		err := r.ParseForm()
+		// Configurar encabezados para CORS y tipo de respuesta
+		w.Header().Set("Content-Type", "application/json")
+
+		// Parsear formulario multipart (importante para FormData)
+		maxMemory := int64(10 * 1024 * 1024) // 10MB máximo de memoria para archivos
+		err := r.ParseMultipartForm(maxMemory)
 		if err != nil {
-			http.Error(w, err.Error(), http.StatusBadRequest)
+			http.Error(w, "Error al procesar el formulario: "+err.Error(), http.StatusBadRequest)
 			return
 		}
 
