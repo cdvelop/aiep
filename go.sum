@@ -1,2 +1,4 @@
+github.com/cdvelop/unixid v0.0.67 h1:dVXS2eRb8Ql5LKA0tNbJ052dz0t1fxHdiyzuFU2sS6E=
+github.com/cdvelop/unixid v0.0.67/go.mod h1:xKzBnMWeikehrG1VlX3PYa84AJfiQNJ/GjlUOY7zwVA=
 github.com/lib/pq v1.10.9 h1:YXG7RB+JIjhP29X+OtkiDnYaXQwpS4JEWq7dtCCRUEw=
 github.com/lib/pq v1.10.9/go.mod h1:AlVN5x4E4T544tWzH6hKfbfQvm3HdbOxrmggDNAPY9o=

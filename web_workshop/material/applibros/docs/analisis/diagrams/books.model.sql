@@ -10,26 +10,26 @@ DROP TABLE IF EXISTS genero;
 
 -- Create tables
 CREATE TABLE autor (
-    id TEXT PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     nombre TEXT NOT NULL
 );
 
 CREATE TABLE genero (
-    id TEXT PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     nombre TEXT NOT NULL
 );
 
 CREATE TABLE libro (
     id TEXT PRIMARY KEY,
     titulo TEXT NOT NULL,
-    autor_id TEXT NOT NULL,
-    genero_id TEXT NOT NULL,
+    autor_id INTEGER NOT NULL,
+    genero_id INTEGER NOT NULL,
     FOREIGN KEY (autor_id) REFERENCES autor(id),
     FOREIGN KEY (genero_id) REFERENCES genero(id)
 );
 
 CREATE TABLE imagen (
-    id TEXT PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     libro_id TEXT NOT NULL,
     url TEXT NOT NULL,
     descripcion TEXT,
@@ -38,8 +38,8 @@ CREATE TABLE imagen (
 
 -- Junction table for many-to-many relationship between Autor and Genero
 CREATE TABLE autor_genero (
-    autor_id TEXT NOT NULL,
-    genero_id TEXT NOT NULL,
+    autor_id INTEGER NOT NULL,
+    genero_id INTEGER NOT NULL,
     PRIMARY KEY (autor_id, genero_id),
     FOREIGN KEY (autor_id) REFERENCES autor(id),
     FOREIGN KEY (genero_id) REFERENCES genero(id)

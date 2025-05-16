@@ -1,26 +1,26 @@
 @startuml
 entity Libro {
-+ID : int
++ID : string
 --
 Titulo : string
-AutorID : string
-GeneroID : string
+AutorID : int
+GeneroID : int
 }
 
 entity Autor {
-+ID : string
++ID : int
 --
 Nombre : string
 }
 
 entity Genero {
-+ID : string
++ID : int
 --
 Nombre : string
 }
 
 entity Imagen {
-+ID : string
++ID : int
 --
 LibroID : string
 URL : string
