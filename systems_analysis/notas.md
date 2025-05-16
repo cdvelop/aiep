@@ -2,8 +2,8 @@
 
 | NOMBRE | EVA 1 | EVA 2 | Promedio (eva 1-2) | EVA 3 | EVA 4 | Promedio (eva 3-4) | FINAL |
 |:-------|:------:|:------:|:------:|:------:|:------:|:------:|:-----:|
-| 🟡 Benjamin Arturo Uribe Sanhueza |60|33|47|25| | |
-| 🟡 Luis Gustavo Zañartu Otarola   |60|33|47|25| | |
+| 🟡 Benjamin Arturo Uribe Sanhueza |60|33|47|46| | |
+| 🟡 Luis Gustavo Zañartu Otarola   |60|33|47|46| | |
 | 🟢 Catalina Constanza Toledo Mora |70|58|64|55| | |
 | 🟢 Diego Nicolas Gonzalez Fuentes |70|58|64|55| | |
 | 🔴 Daniel Esteban Romero Labra    |70|58|64|60| | |
