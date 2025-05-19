@@ -1,17 +1,17 @@
 # EVALUACIONES WEB WORKSHOP:
 
-| NOMBRE | EVA 1 Nota |  EVA 2 | EVA 3 | Promedio (eva 2-3) | FINAL |
-|:-------|:----------:|:------:|:------:|:------------------:|:------:|
-| 🟡 Benjamin Arturo Uribe Sanhueza |5.8|2.5| | | |
-| 🟡 Luis Gustavo Zañartu Otarola   |2.3|4.0| | | |
-| 🟢 Catalina Constanza Toledo Mora |5.2|6.3| | | |
-| 🟢 Diego Nicolas Gonzalez Fuentes |6.4|6.8| | | |
-| 🔴 Daniel Esteban Romero Labra    |6.2|5.1| | | |
-| 🔴 Francisco Javier Villa Faundez |6.9|5.1| | | |
-| 🔴 Jose Ignacio Chavez Leiva      |4.1|6.1| | | |
-| 🔵 Jose Manuel Aylwin Troncoso    |7.0|6.8| | | |
-| 🔵 Juan Alirio Beleño             |6.4|6.8| | | |
-| 🔵 Pedro Jose Flores Medina       |5.4|6.8| | | |
+| NOMBRE | EVA 1 |  EVA 2 | EVA 3 | FINAL |
+|:-------|:----------:|:------:|:------:|:------------------:|
+| 🟡 Benjamin Arturo Uribe Sanhueza |5.8|2.5| | | 
+| 🟡 Luis Gustavo Zañartu Otarola   |2.3|4.0| | | 
+| 🟢 Catalina Constanza Toledo Mora |5.2|6.3| | | 
+| 🟢 Diego Nicolas Gonzalez Fuentes |6.4|6.8| | | 
+| 🔴 Daniel Esteban Romero Labra    |6.2|5.1|15 | | 
+| 🔴 Francisco Javier Villa Faundez |6.9|5.1| | | 
+| 🔴 Jose Ignacio Chavez Leiva      |4.1|6.1| | | 
+| 🔵 Jose Manuel Aylwin Troncoso    |7.0|6.8| | | 
+| 🔵 Juan Alirio Beleño             |6.4|6.8| | | 
+| 🔵 Pedro Jose Flores Medina       |5.4|6.8| | | 
 
 **Leyenda:**
 - 🔴 Supported
@@ -25,8 +25,7 @@
 | ACTIVIDAD               | PUNTOS | B. Uribe | C. Toledo | D. Gonzalez | L. Zañartu | D. Romero | F. Villa | J. Chavez | J. Aylwin | J. Beleño | P. Flores |
 | :---------------------- | :----- | :------- | :-------- | :---------- | :--------- | :-------- | :------- | :-------- | :-------- | :-------- | :-------- |
 | Participacion en clases | 5      |          |           |             |            |           |          |           |           |           |           |
-| web test                | 10     |          |           |             |            |           |          |         |        |        |        |
-| ayudantia               | 15     |          |           |             |            |  15       |          |           |           |           |           |
+| ayudantia               | 15     |          |           |             |            |         |          |           |           |           |           |
 
 
 
@@ -42,4 +41,5 @@ ej: donde 0 puntos es un 1.0 y 50 puntos es un 7.0)
     Ejemplo: 0.8 * 6 = 4.8.
 - 3 -> 1 + ...: Finalmente, sumamos 1 (la nota mínima) al resultado del paso anterior. Esto asegura que la nota final esté en la escala correcta de 1.0 a 7.0.
     Ejemplo: 1 + 4.8 = 5.8.
+    Así, un alumno con 40 puntos obtiene una nota de 5.8.
     Así, un alumno con 40 puntos obtiene una nota de 5.8.

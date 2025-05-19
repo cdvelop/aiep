@@ -57,8 +57,17 @@ Esta evaluación integra los conocimientos de Análisis de Sistemas (modelado de
 *   *[Video Sugerido 🎬: Routing Con Go y la librería Estándar (english)]*
 [![routing go net http](https://img.youtube.com/vi/H7tbjKFSg58/0.jpg)](https://www.youtube.com/watch?v=H7tbjKFSg58)
 
+*   *[Video Sugerido 🎬: Creación de un portal de inicio de sesión seguro (english)]*
+[![Building a Secure Login Portal with Go](https://img.youtube.com/vi/OmLdoEMcr_Y/0.jpg)](https://www.youtube.com/watch?v=OmLdoEMcr_Y)
+
 *   *[Video Sugerido 🎬: Curl*
 [![Curl](https://img.youtube.com/vi/n3NtrQYrjDw/0.jpg)](https://www.youtube.com/watch?v=n3NtrQYrjDw)
+
+*   *[Video Sugerido 🎬: Add Cookie with Curl*
+[![Add Cookie with Curl](https://img.youtube.com/vi/1zrQ6OhFrOo/0.jpg)](https://www.youtube.com/watch?v=1zrQ6OhFrOo)
+
+*   *[Video Sugerido 🎬: Add Header with Curl*
+[![Add Header with Curl](https://img.youtube.com/vi/G1v_M3fhHqY/0.jpg)](https://www.youtube.com/watch?v=G1v_M3fhHqY)
 
 ---
 
