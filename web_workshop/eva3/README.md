@@ -57,6 +57,9 @@ Esta evaluación integra los conocimientos de Análisis de Sistemas (modelado de
 *   *[Video Sugerido 🎬: Routing Con Go y la librería Estándar (english)]*
 [![routing go net http](https://img.youtube.com/vi/H7tbjKFSg58/0.jpg)](https://www.youtube.com/watch?v=H7tbjKFSg58)
 
+*   *[Video Sugerido 🎬: Curl*
+[![Curl](https://img.youtube.com/vi/n3NtrQYrjDw/0.jpg)](https://www.youtube.com/watch?v=n3NtrQYrjDw)
+
 ---
 
 ## Parte 2: 🖥️ Frontend - Cliente Web con JS Nativo y Web Component (20 Puntos)
