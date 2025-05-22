@@ -26,23 +26,20 @@ function displayBooks() {
         authorCell.innerHTML = book.author;
         genreCell.innerHTML = book.genre;
         imageCell.innerHTML = `<img src="${book.image}" alt="${book.title}" />`;
-        actionsCell.innerHTML = '<button onclick="editBook(' + book.id + ')">Edit</button> <button onclick="deleteBook(' + book.id + ')">Delete</button>';
+        actionsCell.innerHTML = `<button onclick="editBook('${book.id}')">Edit</button> <button onclick="deleteBook('${book.id}')">Delete</button>`;
     });
 }
 
 function addBook(e) {
     e.preventDefault();
 
-
     // almacenar los libros en la base de datos del servidor
     storageBooksInServer();
 }
 
-
 function storageBooksInServer() {
     // enviar el formulario al servidor
     const formData = new FormData(bookForm);
-
 
     // Verificar que los datos se capturaron correctamente
     console.log('FormData contenido:');
@@ -72,7 +69,6 @@ function storageBooksInServer() {
         .then(data => {
             console.log('Success:', data);
 
-
             const id = idInput.value;
             const title = titleInput.value;
             const author = authorInput.value;
@@ -80,15 +76,15 @@ function storageBooksInServer() {
             const image = imageInput.value;
 
             if (id) {
-                // Update existing book
-                const bookIndex = books.findIndex(book => book.id === parseInt(id));
+                // Update existing book - comparar como string
+                const bookIndex = books.findIndex(book => book.id.toString() === id);
                 if (bookIndex !== -1) {
-                    books[bookIndex] = { id: parseInt(id), title, author, genre, image };
+                    books[bookIndex] = { id: id, title, author, genre, image };
                 }
             } else {
-                // Create new book
+                // Create new book - generar ID como string si es necesario
                 const newBook = {
-                    id: books.length > 0 ? books[books.length - 1].id + 1 : 1,
+                    id: data.id || (books.length > 0 ? (parseInt(books[books.length - 1].id) + 1).toString() : "1"),
                     title,
                     author,
                     genre,
@@ -97,14 +93,10 @@ function storageBooksInServer() {
                 books.push(newBook);
             }
 
-
             // borrar el formulario
             clearForm();
             // mostrar los libros
             displayBooks();
-
-
-
         })
         .catch((error) => {
             if (error instanceof SyntaxError) {
@@ -115,13 +107,11 @@ function storageBooksInServer() {
                 // alert('Error al comunicarse con el servidor: ' + error.message);
             }
         });
-
 }
 
-
-
 function editBook(id) {
-    const book = books.find(book => book.id === id);
+    // Comparar como string para ser consistente
+    const book = books.find(book => book.id.toString() === id.toString());
     if (book) {
         idInput.value = book.id;
         titleInput.value = book.title;
@@ -132,11 +122,20 @@ function editBook(id) {
 }
 
 function deleteBook(id) {
-    const bookIndex = books.findIndex(book => book.id === id);
-    if (bookIndex !== -1) {
-        books.splice(bookIndex, 1);
-        displayBooks();
-    }
+    fetch(`/books/${id}`, { method: 'DELETE' })
+        .then(response => {
+            if (response.ok) {
+                // Comparar como string
+                const bookIndex = books.findIndex(book => book.id.toString() === id.toString());
+                if (bookIndex !== -1) {
+                    books.splice(bookIndex, 1);
+                    displayBooks();
+                }
+            } else {
+                console.error('Error al eliminar libro');
+            }
+        })
+        .catch(error => console.error('Error al comunicarse con el servidor:', error));
 }
 
 function clearForm() {
@@ -150,3 +149,42 @@ function clearForm() {
 bookForm.addEventListener('submit', addBook);
 
 displayBooks();
+
+function fetchBooksFromServer() {
+    fetch('/books')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Libros recibidos del servidor:', data);
+            
+            // Limpiar array actual
+            books.length = 0;
+            
+            // Agregar libros del servidor
+            data.forEach(book => {
+                books.push({
+                    id: book.id, // Mantener como string
+                    title: book.title,
+                    author: book.author,
+                    genre: book.genre,
+                    image: book.image
+                });
+            });
+            
+            console.log('Array de libros actualizado:', books);
+            displayBooks();
+        })
+        .catch(error => {
+            console.error('Error al obtener libros del servidor:', error);
+        });
+}
+
+// Ejecutar cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM cargado, obteniendo libros del servidor...');
+    fetchBooksFromServer();
+});

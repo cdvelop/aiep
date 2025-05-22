@@ -1,5 +1,5 @@
 -- PostgreSQL schema for books database
--- Generated from PlantUML diagram
+-- Updated to support ON CONFLICT by adding UNIQUE constraints
 
 -- Drop existing tables if they exist
 DROP TABLE IF EXISTS autor_genero;
@@ -11,12 +11,12 @@ DROP TABLE IF EXISTS genero;
 -- Create tables
 CREATE TABLE autor (
     id SERIAL PRIMARY KEY,
-    nombre TEXT NOT NULL
+    nombre TEXT NOT NULL UNIQUE  -- Permite ON CONFLICT(nombre)
 );
 
 CREATE TABLE genero (
     id SERIAL PRIMARY KEY,
-    nombre TEXT NOT NULL
+    nombre TEXT NOT NULL UNIQUE  -- Permite ON CONFLICT(nombre)
 );
 
 CREATE TABLE libro (

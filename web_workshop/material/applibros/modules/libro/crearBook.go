@@ -3,7 +3,6 @@ package libro
 import (
 	"database/sql"
 	"encoding/json"
-	"fmt"
 	"net/http"
 
 	. "github.com/cdvelop/aiep/web_workshop/material/applibros/modules/ids"
@@ -18,104 +17,100 @@ type Response struct {
 
 func CrearLibro(db *sql.DB) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		// Configurar encabezados para CORS y tipo de respuesta
 		w.Header().Set("Content-Type", "application/json")
 
-		// Parsear formulario multipart (importante para FormData)
-		maxMemory := int64(10 * 1024 * 1024) // 10MB máximo de memoria para archivos
-		err := r.ParseMultipartForm(maxMemory)
-		if err != nil {
+		// Parsear formulario multipart (para FormData)
+		if err := r.ParseMultipartForm(10 << 20); err != nil {
 			http.Error(w, "Error al procesar el formulario: "+err.Error(), http.StatusBadRequest)
 			return
 		}
 
-		// recorrer datos del formulario
-		fmt.Println("Datos recibidos del formulario:")
-		for key, values := range r.Form {
-			for _, value := range values {
-				fmt.Printf("Campo: %s, Valor: %s\n", key, value)
-			}
-		}
+		// Extraer campos
+		titulo := r.FormValue("title")
+		nombreAutor := r.FormValue("author")
+		nombreGenero := r.FormValue("genre")
+		urlImagen := r.FormValue("image")                     // Asumimos campo opcional
+		descripcionImagen := r.FormValue("image_description") // opcional
 
-		// Extraer datos del formulario
-		titulo := r.FormValue("titulo")
-		nombreAutor := r.FormValue("autor")
-		nombreGenero := r.FormValue("genero")
-		urlImagen := r.FormValue("url_imagen")
-		descripcionImagen := r.FormValue("descripcion_imagen")
-
-		// Validar datos mínimos requeridos
+		// Validación mínima
 		if titulo == "" || nombreAutor == "" || nombreGenero == "" {
-			respondWithError(w, "Faltan campos obligatorios: título, autor y género son requeridos", http.StatusBadRequest)
+			respondWithError(w, "Faltan campos obligatorios: título, autor y género", http.StatusBadRequest)
 			return
 		}
 
-		// Generar ID único para el libro
+		// Generar ID único (string, como especifica el esquema)
 		libroID := ID.GetNewID()
 
-		println("ID generado para el libro:", libroID)
-
-		// Comenzar transacción
 		tx, err := db.Begin()
 		if err != nil {
 			respondWithError(w, "Error al iniciar transacción: "+err.Error(), http.StatusInternalServerError)
 			return
 		}
+		defer tx.Rollback()
 
-		// Función para hacer rollback en caso de error
-		rollbackOnError := func(err error) {
-			tx.Rollback()
-			respondWithError(w, err.Error(), http.StatusInternalServerError)
-		}
-
-		// 1. Insertar o buscar autor
+		// Insertar o recuperar autor
 		var autorID int
-		err = tx.QueryRow("INSERT INTO autor (nombre) VALUES ($1) ON CONFLICT (nombre) DO UPDATE SET nombre = $1 RETURNING id", nombreAutor).Scan(&autorID)
+		err = tx.QueryRow(`
+			INSERT INTO autor (nombre) VALUES ($1)
+			ON CONFLICT (nombre) DO UPDATE SET nombre = EXCLUDED.nombre
+			RETURNING id
+		`, nombreAutor).Scan(&autorID)
 		if err != nil {
-			rollbackOnError(fmt.Errorf("error al insertar autor: %w", err))
+			respondWithError(w, "Error al insertar autor: "+err.Error(), http.StatusInternalServerError)
 			return
 		}
 
-		// 2. Insertar o buscar género
+		// Insertar o recuperar género
 		var generoID int
-		err = tx.QueryRow("INSERT INTO genero (nombre) VALUES ($1) ON CONFLICT (nombre) DO UPDATE SET nombre = $1 RETURNING id", nombreGenero).Scan(&generoID)
+		err = tx.QueryRow(`
+			INSERT INTO genero (nombre) VALUES ($1)
+			ON CONFLICT (nombre) DO UPDATE SET nombre = EXCLUDED.nombre
+			RETURNING id
+		`, nombreGenero).Scan(&generoID)
 		if err != nil {
-			rollbackOnError(fmt.Errorf("error al insertar género: %w", err))
+			respondWithError(w, "Error al insertar género: "+err.Error(), http.StatusInternalServerError)
 			return
 		}
 
-		// 3. Insertar libro
-		_, err = tx.Exec("INSERT INTO libro (id, titulo, autor_id, genero_id) VALUES ($1, $2, $3, $4)",
-			libroID, titulo, autorID, generoID)
+		// Insertar libro
+		_, err = tx.Exec(`
+			INSERT INTO libro (id, titulo, autor_id, genero_id)
+			VALUES ($1, $2, $3, $4)
+		`, libroID, titulo, autorID, generoID)
 		if err != nil {
-			rollbackOnError(fmt.Errorf("error al insertar libro: %w", err))
+			respondWithError(w, "Error al insertar libro: "+err.Error(), http.StatusInternalServerError)
 			return
 		}
 
-		// 4. Insertar imagen si se proporcionó URL
+		// Insertar imagen (si se envió)
 		if urlImagen != "" {
-			_, err = tx.Exec("INSERT INTO imagen (libro_id, url, descripcion) VALUES ($1, $2, $3)",
-				libroID, urlImagen, descripcionImagen)
+			_, err = tx.Exec(`
+				INSERT INTO imagen (libro_id, url, descripcion)
+				VALUES ($1, $2, $3)
+			`, libroID, urlImagen, descripcionImagen)
 			if err != nil {
-				rollbackOnError(fmt.Errorf("error al insertar imagen: %w", err))
+				respondWithError(w, "Error al insertar imagen: "+err.Error(), http.StatusInternalServerError)
 				return
 			}
 		}
 
-		// Confirmar transacción
-		if err = tx.Commit(); err != nil {
-			rollbackOnError(fmt.Errorf("error al confirmar transacción: %w", err))
+		// Confirmar la transacción
+		if err := tx.Commit(); err != nil {
+			respondWithError(w, "Error al confirmar transacción: "+err.Error(), http.StatusInternalServerError)
 			return
 		}
 
-		// Responder con éxito
-		response := Response{
+		// Respuesta
+		respuesta := struct {
+			Success bool   `json:"success"`
+			Message string `json:"message"`
+			ID      string `json:"id"`
+		}{
 			Success: true,
 			Message: "Libro creado exitosamente",
 			ID:      libroID,
 		}
-
-		json.NewEncoder(w).Encode(response)
+		json.NewEncoder(w).Encode(respuesta)
 	}
 }
 

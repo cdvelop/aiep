@@ -22,8 +22,9 @@ func main() {
 	// Need to strip prefix if handlers above conflict, or use a subpath like /static/
 	http.Handle("/", fs) // Be careful: This might catch API calls if not handled above
 
-	http.HandleFunc("GET /books", libro.ObtenerLibros(db))
 	http.HandleFunc("POST /books", libro.CrearLibro(db))
+	http.HandleFunc("GET /books", libro.ListarLibros(db))          // Leer todos los libros
+	http.HandleFunc("DELETE /books/{id}", libro.EliminarLibro(db)) // Eliminar libro por ID
 
 	fmt.Println("Servidor iniciado en http://localhost:8080")
 	log.Fatal(http.ListenAndServe(":8080", nil))
