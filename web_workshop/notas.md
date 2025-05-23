@@ -4,11 +4,11 @@
 |:-------|:----------:|:------:|:------:|:------------------:|
 | 🟡 Benjamin Arturo Uribe Sanhueza |5.8|2.5| | | 
 | 🟡 Luis Gustavo Zañartu Otarola   |2.3|4.0| | | 
-| 🟢 Catalina Constanza Toledo Mora |5.2|6.3| | | 
-| 🟢 Diego Nicolas Gonzalez Fuentes |6.4|6.8| | | 
-| 🔴 Daniel Esteban Romero Labra    |6.2|5.1|7.0 | | 
+| 🟢 Catalina Constanza Toledo Mora |5.2|6.3|5.0| | 
+| 🟢 Diego Nicolas Gonzalez Fuentes |6.4|6.8|5.0| | 
+| 🔴 Daniel Esteban Romero Labra    |6.2|5.1|7.0| | 
 | 🔴 Francisco Javier Villa Faundez |6.9|5.1|6.8| | 
-| 🔴 Jose Ignacio Chavez Leiva      |4.1|6.1|6.8 | | 
+| 🔴 Jose Ignacio Chavez Leiva      |4.1|6.1|6.8| | 
 | 🔵 Jose Manuel Aylwin Troncoso    |7.0|6.8| | | 
 | 🔵 Juan Alirio Beleño             |6.4|6.8| | | 
 | 🔵 Pedro Jose Flores Medina       |5.4|6.8| | | 
