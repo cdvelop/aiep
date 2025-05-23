@@ -9,9 +9,9 @@
 | 🔴 Daniel Esteban Romero Labra    |6.2|5.1|7.0| | 
 | 🔴 Francisco Javier Villa Faundez |6.9|5.1|6.8| | 
 | 🔴 Jose Ignacio Chavez Leiva      |4.1|6.1|6.8| | 
-| 🔵 Jose Manuel Aylwin Troncoso    |7.0|6.8| | | 
-| 🔵 Juan Alirio Beleño             |6.4|6.8| | | 
-| 🔵 Pedro Jose Flores Medina       |5.4|6.8| | | 
+| 🔵 Jose Manuel Aylwin Troncoso    |7.0|6.8|7.0| | 
+| 🔵 Juan Alirio Beleño             |6.4|6.8|7.0| | 
+| 🔵 Pedro Jose Flores Medina       |5.4|6.8|7.0| | 
 
 **Leyenda:**
 - 🔴 Supported
