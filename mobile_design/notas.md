@@ -2,8 +2,8 @@
 
 | NOMBRE | EVA 1 | EVA 2 | EVA 3 | FINAL |
 |:-------|:------:|:------:|:------:|:-----:|
-| 🟡 Benjamin Arturo Uribe Sanhueza |||||
-| 🟡 Luis Gustavo Zañartu Otarola   |||||
+| 🟡 Benjamin Arturo Uribe Sanhueza |10||||
+| 🟡 Luis Gustavo Zañartu Otarola   |10||||
 | 🟢 Catalina Constanza Toledo Mora |10||||
 | 🟢 Diego Nicolas Gonzalez Fuentes |10||||
 | 🔴 Daniel Esteban Romero Labra    |10||||
@@ -18,6 +18,7 @@
 - 🟢 StarProgramming
 - 🔵 Solvtech
 - 🟡 Mobix
+
 
 
 
