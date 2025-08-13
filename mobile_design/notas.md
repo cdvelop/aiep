@@ -9,14 +9,15 @@
 | 🔴 Daniel Esteban Romero Labra    |||||
 | 🔴 Francisco Javier Villa Faundez |||||
 | 🔴 Jose Ignacio Chavez Leiva      |||||
-| 🔵 Jose Manuel Aylwin Troncoso    |||||
-| 🔵 Juan Alirio Beleño             |||||
-| 🔵 Pedro Jose Flores Medina       |||||
+| 🔵 Jose Manuel Aylwin Troncoso    |10||||
+| 🔵 Juan Alirio Beleño             |10||||
+| 🔵 Pedro Jose Flores Medina       |10||||
 
 **Leyenda:**
 - 🔴 Supported
 - 🟢 StarProgramming
 - 🔵 Solvtech
 - 🟡 Mobix
+
 
 
