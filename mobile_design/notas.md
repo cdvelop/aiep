@@ -4,8 +4,8 @@
 |:-------|:------:|:------:|:------:|:-----:|
 | 🟡 Benjamin Arturo Uribe Sanhueza |||||
 | 🟡 Luis Gustavo Zañartu Otarola   |||||
-| 🟢 Catalina Constanza Toledo Mora |||||
-| 🟢 Diego Nicolas Gonzalez Fuentes |||||
+| 🟢 Catalina Constanza Toledo Mora |10||||
+| 🟢 Diego Nicolas Gonzalez Fuentes |10||||
 | 🔴 Daniel Esteban Romero Labra    |||||
 | 🔴 Francisco Javier Villa Faundez |||||
 | 🔴 Jose Ignacio Chavez Leiva      |||||
@@ -18,4 +18,5 @@
 - 🟢 StarProgramming
 - 🔵 Solvtech
 - 🟡 Mobix
+
 
