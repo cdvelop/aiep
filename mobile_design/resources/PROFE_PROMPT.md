@@ -1,0 +1,9 @@
+soy un profesor del area de análisis de sistemas y estoy impartiendo 2 ramos a los mismo 10 alumnos los cuales conforman 4 grupos (la idea es que cada grupo  sea un equipo de desarrollo lo cual deben crear distintas piezas del software) los ramos son "aplicaciones mobiles" y "taller de calidad y testing de software". 
+
+con los alumnos para aprender estas materias acordamos de crear un aplicación mobile (beta) que es un juego de rol cooperativo, fantasia portales de tiempo. pero la historia no es importante aquí es lo que deben conocer para construirla. 
+
+en el ramo esta definido que deben conocer andriod studio y conectarse a firebase, deben conocer como construir app escalables usando arquitecturas y patrones de diseño, uso de interfaces especialmente para poder separar las lógicas de la aplicación y cada grupo puedan testear de forma separada y aislada,
+
+yo como profesor les pedire que cada paquete creado debe cumplir con cierta cobertura de pruebas (segun la dificultad), debemos aun decidir si se contruira en Flutter o Kotlin para facilidad. los alumnos comentan que quieren aprender a acceder a los sensores de un teléfono por eso es importante la tecnología a usar
+
+necesito que me ayudes a crear una hoja de ruta para el curso y asi esta propuesta antes mencionada tenga una fluidez en el aprendizaje para los alumnos ademas debes incluir como evaluar las actividades. cave destacar que las actividades todas se realizaran usando visual studio code, git github, todos lod cambios y bugs con issue y pull request, y que cada grupo debe tener un fork del proyecto central que es github.com/cdvelop/fighterstime. 
