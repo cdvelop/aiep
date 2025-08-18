@@ -1,6 +1,6 @@
 # ACTIVIDAD 2
 
-cada grupo debe crear un listado de requerimientos máximo 3 por grupo, cada requerimiento debe tener asignado un responsable, para el juego, incluyendo aspectos como mecánicas de juego, personajes, historia, y cualquier otro elemento relevante.en base a las visiones documentadas.
+cada grupo debe crear un listado de requerimientos funcionales máximo 3 por grupo, cada requerimiento debe tener asignado un responsable, para el juego, incluyendo aspectos como mecánicas de juego, personajes, historia, y cualquier otro elemento relevante.en base a las visiones documentadas.
 
 el documento debe estar en 
 docs/requirements/README.md
