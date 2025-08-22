@@ -43,4 +43,57 @@ func NewServicioFacturacionDI(n Notificador) *ServicioFacturacionDI {
 }
 ```
 
+### Ejemplo en Kotlin:
+
+```kotlin
+// --- SIN INYECCIÓN DE DEPENDENCIAS ---
+class NotificadorEmail {
+    fun enviar(mensaje: String) {
+        println("Enviando email: $mensaje")
+    }
+}
+
+class ServicioFacturacion {
+    private val notificador = NotificadorEmail() // ¡Acoplamiento fuerte!
+
+    fun procesarPago() {
+        notificador.enviar("Pago procesado con éxito")
+    }
+}
+
+// --- CON INYECCIÓN DE DEPENDENCIAS ---
+interface Notificador { // 1. Dependemos de una abstracción
+    fun enviar(mensaje: String)
+}
+
+class NotificadorEmailDI : Notificador {
+    override fun enviar(mensaje: String) {
+        println("Enviando email: $mensaje")
+    }
+}
+
+class NotificadorSMS : Notificador {
+    override fun enviar(mensaje: String) {
+        println("Enviando SMS: $mensaje")
+    }
+}
+
+class ServicioFacturacionDI(private val notificador: Notificador) { // 2. La dependencia se inyecta
+    fun procesarPago() {
+        notificador.enviar("Pago procesado con éxito")
+    }
+}
+
+// --- Uso ---
+fun main() {
+    // Inyectamos un notificador de emails
+    val servicioEmail = ServicioFacturacionDI(NotificadorEmailDI())
+    servicioEmail.procesarPago()
+
+    // O inyectamos un notificador de SMS
+    val servicioSMS = ServicioFacturacionDI(NotificadorSMS())
+    servicioSMS.procesarPago()
+}
+```
+
 Con DI, ahora podemos pasarle a `ServicioFacturacionDI` un `NotificadorSMS` o un `NotificadorMock` para las pruebas, sin cambiar una línea de su código.

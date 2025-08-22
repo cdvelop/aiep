@@ -24,52 +24,58 @@ cada encargado de grupo debe preocuparse de mantener el repositorio original (no
 
 ### Ejemplo de formato de requerimientos:
 
+---
 
-### Alternativa 1: Usando Encabezados y Lista de Detalles
+### **R02: Sistema de Inventario**
 
-Este formato es muy claro y organizado. Usa un encabezado para cada requerimiento, lo que facilita la navegación y referencia, y una lista para los detalles, lo que lo hace muy legible.
+- **Descripción:**  
+  El juego debe permitir al jugador acceder a un inventario desde el menú principal y durante la partida.  
+  - El inventario mostrará una lista desplazable con un máximo de **30 ítems visibles** al mismo tiempo.  
+  - Cada ítem tendrá un **nombre (string)**, una **imagen (png 64x64)**, y un **contador de cantidad (int ≥ 0)**.  
+  - El jugador podrá **usar**, **equipar** o **descartar** ítems mediante un menú contextual al hacer clic sobre ellos.  
+  - Si el jugador intenta descartar un ítem equipado, el sistema debe **mostrar un diálogo de confirmación**.  
+  - El tiempo de respuesta para abrir el inventario no debe superar los **500 ms en un dispositivo gama media**.  
+
+- **Responsable:** Grupo 2 / Persona 4  
+- **Prioridad:** Alta  
 
 ---
 
-### **R01: Selección de personajes**
+### **R03: Sistema de Combate por Turnos**
 
-- **Descripción:** El juego debe permitir al jugador elegir entre al menos tres personajes distintos. Cada personaje contará con un conjunto de habilidades únicas que afectarán la jugabilidad.
-- **Responsable:** Grupo 1 / persona 1
-- **Prioridad:** Alta
+- **Descripción:**  
+  El juego debe implementar un sistema de combate **por turnos** con las siguientes reglas:  
+  - El turno inicial será asignado **aleatoriamente** entre jugador y enemigo.  
+  - Cada turno, el jugador puede elegir entre **Atacar**, **Defender** o **Usar ítem**.  
+  - Un ataque debe calcular el daño con la fórmula:  
+    `daño = poder_ataque_personaje – defensa_enemigo + random(-2,2)`  
+  - Los puntos de vida del enemigo y del jugador se actualizarán **inmediatamente** tras la acción.  
+  - El combate debe finalizar cuando **PV ≤ 0** en cualquiera de los dos participantes, mostrando un mensaje de **Victoria** o **Derrota**.  
+  - La animación de ataque no debe superar los **2 segundos**.  
 
----
-
-### **R02: Sistema de niveles progresivos**
-
-- **Descripción:** Implementar un sistema de dificultad que aumente progresivamente a lo largo del juego, incluyendo un mínimo de cinco niveles con desafíos crecientes.
-- **Responsable:** Grupo 2 / persona 2
-- **Prioridad:** Media
-
----
-
-### Alternativa 2: Formato de Ficha Compacta
-
-Este formato es más directo y minimalista. Usa texto en negrita para resaltar cada campo, manteniendo toda la información de un requerimiento en un solo bloque compacto.
+- **Responsable:** Grupo 3 / Persona 2  
+- **Prioridad:** Crítica  
 
 ---
 
-**ID:** R01
-**Nombre:** Selección de personajes
-**Descripción:** El juego debe permitir elegir entre al menos 3 personajes distintos con habilidades únicas.
-**Responsable:** Grupo 1 / persona 1
-**Prioridad:** Alta
+### **R04: Guardado Automático de Partida**
 
+- **Descripción:**  
+  El sistema debe permitir guardar automáticamente el progreso del jugador bajo las siguientes condiciones:  
+  - Cada vez que el jugador cambia de nivel, se debe guardar:  
+    - Personaje seleccionado.  
+    - Nivel actual.  
+    - Estado del inventario (ítems y cantidades).  
+    - Puntos de vida y experiencia.  
+  - El guardado debe almacenarse en una base de datos **Room** con tabla `SaveData` y campos (`id`, `personaje`, `nivel`, `inventario_json`, `pv`, `exp`).  
+  - Si ocurre un cierre inesperado de la aplicación, al reabrirla se debe restaurar automáticamente el último estado guardado.  
+  - El guardado debe realizarse en **< 1 segundo** y no afectar la fluidez de la animación en pantalla.  
+
+- **Responsable:** Grupo 1 / Persona 3  
+- **Prioridad:** Alta  
 ---
 
-**ID:** R02
-**Nombre:** Sistema de niveles progresivos
-**Descripción:** Implementar un sistema de dificultad progresiva con al menos 5 niveles.
-**Responsable:** Grupo 2 / persona 2
-**Prioridad:** Media
 
-
-
----
 
 # ACTIVIDAD 1
 cree una descripción del readme del proyecto a realizar, una breve descripcion del juego que se requiere construir nomas de 50 lineas: 
