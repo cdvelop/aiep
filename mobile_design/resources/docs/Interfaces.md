@@ -29,7 +29,7 @@ func (g Gato) Sonar() string {
 
 // Esta función acepta cualquier tipo que satisfaga la interfaz "Sonador"
 func HacerSonar(s Sonador) {
-    fmt.Println(s.Sonar())
+    println(s.Sonar())
 }
 
 func main() {

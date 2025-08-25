@@ -1,7 +1,9 @@
-# Indice Mobile Design
+# Indice Mobile Design & Software Quality
 
-## [Notas](notas.md)
+## - [Evaluaciones Alumnos](evaluations.md)
 
-## [Actividades](activities/README.md)
+## - [Actividades](activities/README.md)
 
-## [Link Cursos](resources/VIDEO_COURSE_LINKS.md)
+## - [Material Aprendizaje](resources/LEARNING_MATERIAL.md)
+
+## - [Link Cursos](resources/VIDEO_COURSE_LINKS.md)
