@@ -1,11 +1,11 @@
-# ACTIVIDAD 2
+# ACTIVIDAD 2 (25pts)
 
 cada grupo debe crear un listado de requerimientos funcionales (máximo 3 por grupo), cada requerimiento debe tener asignado un responsable, para el juego, incluyendo aspectos como mecánicas de juego, personajes, historia, y cualquier otro elemento relevante.en base a las visiones documentadas.
 
 el documento debe estar en: 
 **REPO_NAME/docs/requirements/functional/**
 
-- la momenclatura del nombre para el archivo es
+- la nomenclatura del nombre para el archivo es
 **RF01_APELLIDO_NOMBRE.md**
 
 ej:

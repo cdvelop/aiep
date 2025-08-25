@@ -1,4 +1,4 @@
-# ACTIVIDAD 1
+# ACTIVIDAD 1 (10pts)
 cree una descripción del readme del proyecto a realizar, una breve descripcion del juego que se requiere construir nomas de 50 lineas: 
 
 ej: 
