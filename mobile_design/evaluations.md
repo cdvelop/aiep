@@ -3,16 +3,16 @@
 
 | NOMBRE | EVA 1 | EVA 2 | EVA 3 | FINAL |
 |:-------|:------:|:------:|:------:|:-----:|
-| 🟡 Benjamin Arturo Uribe Sanhueza |10||||
-| 🟡 Luis Gustavo Zañartu Otarola   |10||||
-| 🟢 Catalina Constanza Toledo Mora |10||||
-| 🟢 Diego Nicolas Gonzalez Fuentes |10||||
-| 🔴 Daniel Esteban Romero Labra    |10||||
-| 🔴 Francisco Javier Villa Faundez |10||||
-| 🔴 Jose Ignacio Chavez Leiva      |10||||
-| 🔵 Jose Manuel Aylwin Troncoso    |10||||
-| 🔵 Juan Alirio Beleño             |10||||
-| 🔵 Pedro Jose Flores Medina       |10||||
+| 🟡 Benjamin Arturo Uribe Sanhueza |30||||
+| 🟡 Luis Gustavo Zañartu Otarola   |30||||
+| 🟢 Catalina Constanza Toledo Mora |30||||
+| 🟢 Diego Nicolas Gonzalez Fuentes |35||||
+| 🔴 Daniel Esteban Romero Labra    |35||||
+| 🔴 Francisco Javier Villa Faundez |35||||
+| 🔴 Jose Ignacio Chavez Leiva      |35||||
+| 🔵 Jose Manuel Aylwin Troncoso    |35||||
+| 🔵 Juan Alirio Beleño             |35||||
+| 🔵 Pedro Jose Flores Medina       |35||||
 
 **Leyenda:**
 - 🔴 Supported
