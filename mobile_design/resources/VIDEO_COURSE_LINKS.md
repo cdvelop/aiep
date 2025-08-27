@@ -5,7 +5,7 @@
 
 
 # Github Projects
-[![GITHUB_PROJECTS](https://img.youtube.com/vi/JpKzBuYtkMU/0.jpg)](https://github.com/topics/projects)
+[![GITHUB_PROJECTS](https://img.youtube.com/vi/JpKzBuYtkMU/0.jpg)](https://youtu.be/JpKzBuYtkMU?si=Lj0JRAur8X2sKyUQ)
 
 
 # Kotlin website
