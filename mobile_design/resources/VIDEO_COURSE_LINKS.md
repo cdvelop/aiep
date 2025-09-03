@@ -1,3 +1,8 @@
+
+# Ruleset GITHUB
+[![SCRUM_WEBINAR](https://img.youtube.com/vi/v8KR3_ciJkA/0.jpg)](https://www.youtube.com/watch?v=v8KR3_ciJkA)
+
+
 # Curso de Git / Manejo de Ramas en Entorno Profesional (Branches) / Android Studio
 [![SCRUM_WEBINAR](https://img.youtube.com/vi/-q4uBF-vk4Q/0.jpg)](https://www.youtube.com/watch?v=-q4uBF-vk4Q)
 
