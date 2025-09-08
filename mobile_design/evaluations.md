@@ -8,10 +8,10 @@
 | 🟢 Catalina Constanza Toledo Mora |30||||
 | 🟢 Diego Nicolas Gonzalez Fuentes |40||||
 | 🔴 Daniel Esteban Romero Labra    |45||||
-| 🔴 Francisco Javier Villa Faundez |40||||
-| 🔴 Jose Ignacio Chavez Leiva      |40||||
+| 🔴 Francisco Javier Villa Faundez |45||||
+| 🔴 Jose Ignacio Chavez Leiva      |45||||
 | 🔵 Jose Manuel Aylwin Troncoso    |45||||
-| 🔵 Juan Alirio Beleño             40|||||
+| 🔵 Juan Alirio Beleño             |45||||
 | 🔵 Pedro Jose Flores Medina       |35||||
 
 **Leyenda:**
@@ -19,6 +19,7 @@
 - 🟢 StarProgramming
 - 🔵 Solvtech
 - 🟡 Mobix
+
 
 
 
