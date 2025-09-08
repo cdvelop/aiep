@@ -6,8 +6,8 @@
 | 🟡 Benjamin Arturo Uribe Sanhueza |35||||
 | 🟡 Luis Gustavo Zañartu Otarola   |30||||
 | 🟢 Catalina Constanza Toledo Mora |30||||
-| 🟢 Diego Nicolas Gonzalez Fuentes |40||||
-| 🔴 Daniel Esteban Romero Labra    |45||||
+| 🟢 Diego Nicolas Gonzalez Fuentes |70||||
+| 🔴 Daniel Esteban Romero Labra    |70|5|||
 | 🔴 Francisco Javier Villa Faundez |45||||
 | 🔴 Jose Ignacio Chavez Leiva      |45||||
 | 🔵 Jose Manuel Aylwin Troncoso    |45||||
@@ -19,6 +19,7 @@
 - 🟢 StarProgramming
 - 🔵 Solvtech
 - 🟡 Mobix
+
 
 
 
