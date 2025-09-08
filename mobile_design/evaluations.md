@@ -3,15 +3,15 @@
 
 | NOMBRE | EVA 1 | EVA 2 | EVA 3 | FINAL |
 |:-------|:------:|:------:|:------:|:-----:|
-| 🟡 Benjamin Arturo Uribe Sanhueza |30||||
+| 🟡 Benjamin Arturo Uribe Sanhueza |35||||
 | 🟡 Luis Gustavo Zañartu Otarola   |30||||
 | 🟢 Catalina Constanza Toledo Mora |30||||
-| 🟢 Diego Nicolas Gonzalez Fuentes |35||||
-| 🔴 Daniel Esteban Romero Labra    |35||||
-| 🔴 Francisco Javier Villa Faundez |35||||
-| 🔴 Jose Ignacio Chavez Leiva      |35||||
-| 🔵 Jose Manuel Aylwin Troncoso    |35||||
-| 🔵 Juan Alirio Beleño             |35||||
+| 🟢 Diego Nicolas Gonzalez Fuentes |40||||
+| 🔴 Daniel Esteban Romero Labra    |45||||
+| 🔴 Francisco Javier Villa Faundez |40||||
+| 🔴 Jose Ignacio Chavez Leiva      |40||||
+| 🔵 Jose Manuel Aylwin Troncoso    |45||||
+| 🔵 Juan Alirio Beleño             40|||||
 | 🔵 Pedro Jose Flores Medina       |35||||
 
 **Leyenda:**
@@ -19,6 +19,7 @@
 - 🟢 StarProgramming
 - 🔵 Solvtech
 - 🟡 Mobix
+
 
 
 
