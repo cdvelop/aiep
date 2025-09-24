@@ -11,7 +11,7 @@
 | 🔴 Francisco Javier Villa Faundez |70||||
 | 🔴 Jose Ignacio Chavez Leiva      |70||||
 | 🔵 Jose Manuel Aylwin Troncoso    |70||||
-| 🔵 Juan Alirio Beleño             |70|
+| 🔵 Juan Alirio Beleño             |70|50|
 | 🔵 Pedro Jose Flores Medina       |70||||
 
 
