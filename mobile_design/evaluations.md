@@ -1,5 +1,5 @@
 # EVALUACIONES: 
-**MOBILE DESIGN** & **SOFTWARE QUALITY**
+**MOBILE DESIGN**
 
 | NOMBRE | EVA 1 | EVA 2 | EVA 3 | FINAL |
 |:-------|:------:|:------:|:------:|:-----:|
@@ -14,11 +14,6 @@
 | 🔵 Juan Alirio Beleño             |70|
 | 🔵 Pedro Jose Flores Medina       |70||||
 
-**Leyenda:**
-- 🔴 Supported
-- 🟢 StarProgramming
-- 🔵 Solvtech
-- 🟡 Mobix
 
 
 
