@@ -12,7 +12,7 @@
 | 🔴 Jose Ignacio Chavez Leiva      |70||||
 | 🔵 Jose Manuel Aylwin Troncoso    |70||||
 | 🔵 Juan Alirio Beleño             |70|65|
-| 🔵 Pedro Jose Flores Medina       |70||||
+| 🔵 Pedro Jose Flores Medina       |70|60|||
 
 
 
