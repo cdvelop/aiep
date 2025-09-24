@@ -10,7 +10,7 @@
 | 🔴 Daniel Esteban Romero Labra    |70|5|||
 | 🔴 Francisco Javier Villa Faundez |70||||
 | 🔴 Jose Ignacio Chavez Leiva      |70||||
-| 🔵 Jose Manuel Aylwin Troncoso    |70||||
+| 🔵 Jose Manuel Aylwin Troncoso    |70|70|||
 | 🔵 Juan Alirio Beleño             |70|65|
 | 🔵 Pedro Jose Flores Medina       |70|60|||
 
