@@ -8,7 +8,7 @@
 | 🟡 Luis Gustavo Zañartu Otarola   |55|25|||
 | 🟢 Catalina Constanza Toledo Mora |50|25|||
 | 🟢 Diego Nicolas Gonzalez Fuentes |70|25|||
-| 🔴 Daniel Esteban Romero Labra    |70|30|||
+| 🔴 Daniel Esteban Romero Labra    |70|70|||
 | 🔴 Francisco Javier Villa Faundez |70|30|||
 | 🔴 Jose Ignacio Chavez Leiva      |70|30|||
 | 🔵 Jose Manuel Aylwin Troncoso    |70|25|||
