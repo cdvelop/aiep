@@ -6,7 +6,7 @@
 |:-------|:------:|:------:|:------:|:-----:|
 | 🟡 Benjamin Arturo Uribe Sanhueza |45|50|50||
 | 🟡 Luis Gustavo Zañartu Otarola   |55|60|60||
-| 🟢 Catalina Constanza Toledo Mora |50|25|||
+| 🟢 Catalina Constanza Toledo Mora |50|60|60||
 | 🟢 Diego Nicolas Gonzalez Fuentes |70|25|||
 | 🔴 Daniel Esteban Romero Labra    |70|70|70||
 | 🔴 Francisco Javier Villa Faundez |70|70|70||
@@ -14,6 +14,7 @@
 | 🔵 Jose Manuel Aylwin Troncoso    |70|55|55||
 | 🔵 Juan Alirio Beleño             |70|70|70|
 | 🔵 Pedro Jose Flores Medina       |70|70|70||
+
 
 
 
